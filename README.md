@@ -1,5 +1,8 @@
 # florin-community
 
+- [Trello board](https://trello.com/b/Bj6NDrQs/florin-county-council)
+- [Project spec](https://github.com/LaFosseAcademy/curriculum/blob/main/lap-2/project/README.md)
+
 ## Must have:
 
 - Project title
