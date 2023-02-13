@@ -35,7 +35,9 @@ class Token {
 
     }
     static async destroy(id){
-
+        const response = await db.query("DELETE FROM token WHERE token_id = $1", [id]);
+        localStorage.clear();
+        console.log(response);
     }
 }
 
