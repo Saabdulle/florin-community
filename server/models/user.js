@@ -13,7 +13,9 @@ class User {
         return new User(response.rows[0]);
     }
     static async getOneByUsername(username){
-
+        let response = await db.query("SELECT * FROM user_account WHERE username = $1;", [username]);
+        // Add error handling
+        return new User(response.rows[0]);
     }
     static async create(data){
         let q = {
