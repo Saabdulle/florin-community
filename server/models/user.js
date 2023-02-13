@@ -8,13 +8,21 @@ class User {
         this.email = email;
     }
     static async getOneById(id){
-
+        let response = await db.query("SELECT * FROM user_account WHERE user_id = $1;", [id]);
+        // Add error handling
+        return new User(response.rows[0]);
     }
     static async getOneByUsername(username){
 
     }
     static async create(data){
-
+        let q = {
+            text: "INSERT INTO user_account (username, password, email) VALUES ($1, $2, $3) RETURNING user_id;",
+            values: [data.username, data.password, data.email]
+        }
+        let response = await db.query(q);
+        const newUser = await User.getOneById(response.rows[0].user_id)
+        return newUser;
     }
 }
 
