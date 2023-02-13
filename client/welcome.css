@@ -8,13 +8,18 @@
 }
 
 html {
-    font-size: 200%;
+    font-size: 62.5%;
 }
 
+
+
+/* Welcome page 1 start */
 .header {
     width: 100%;
     height: 100vh;
     position: relative;
+    perspective: 100rem;
+    overflow: hidden;
 }
 
 .img-wrapper {
@@ -22,6 +27,7 @@ html {
     height: 100%;
     background-color: rgb(0,0,0,
     0.8);
+    overflow: hidden;
 }
 
 .img-wrapper img {
@@ -43,29 +49,33 @@ html {
 
 .banner {
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 10%;
 }
 
 .banner h1 {
     font-family: "Ballo Da 2", serif;
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 300;
     color: white;
     width: 50%;
     line-height: 9rem;
     letter-spacing: 0.2rem;
     text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
+    opacity: 0;
+    animation: moveBanner 1s 0.5s forwards;
 }
 
 .banner p {
     font-family: 'Josefin Slab';
-    font-size: 4rem;
+    font-size: 3rem;
     color: #fff;
     width: 70%;
     letter-spacing: 0.1rem;
     margin-bottom: 3rem;
     text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
+    opacity: 0;
+    animation: moveBanner 1s 0.7s forwards;
 }
 
 .banner button {
@@ -80,12 +90,114 @@ html {
     text-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.2);
     box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
     cursor: pointer;
+    opacity: 0;
+    animation: moveBanner 1s 0.9s forwards;
 }
+
+@keyframes moveBanner {
+    0% {
+        transform: translateY(40rem) rotateY(-20deg)
+    }
+    100% {
+        transform: translateY(0)
+        rotateY(0);
+        opacity: 1;
+    }
+}
+/* Welcome page 1 end */
+
+
+
+/* Footer css start */
+
+.section-4 {
+    width: 100%;
+    height: 30vh;
+    background-color: #222;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0;
+    position: relative;
+    align-items: flex-start;
+  }
+  
+  .section-4-text {
+    text-transform: uppercase;
+  }
+  
+  .section-4-heading {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #a79a2d;
+  }
+  
+  .section-4-paragraph {
+    font-size: 1.5rem;
+    color: #888;
+  }
+  
+  .signup-form {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+  }
+  
+  .signup-form-input {
+    width: 35rem;
+    height: 5rem;
+    padding: 1rem;
+    border: 0.2rem solid #a79a2d;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    color: #a79a2d;
+  }
+  
+  .signup-form-input::placeholder {
+    color: #a79a2d;
+  }
+  
+  .signup-form-btn {
+    position: relative;
+    left: -4.5rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: #333;
+    color: #a79a2d;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  
+  .copyright {
+    position: absolute;
+    bottom: 3rem;
+    font-size: 1.7rem;
+    font-weight: 200;
+    color: #eee;
+    letter-spacing: 0.1rem;
+    border-top: 0.1rem solid #888;
+    padding-top: 6rem;
+    width: 100%;
+    text-align: center;
+  }
+/* Footer css end */
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* NAVBAR CSS START */
-ul {
+/* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -108,5 +220,5 @@ ul {
   
   li a:hover {
     background-color: rgb(205, 205, 205);
-  }
+  } */
 /* NAVBAR CSS END */
