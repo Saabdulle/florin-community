@@ -1,0 +1,35 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #470808;
+}
+#council-title{
+    float: left;
+    font-size: 30px;
+    color: antiquewhite;
+    margin: 5px 0px 0px 15px;
+    width: auto;
+}
+
+li {
+    float: right;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+
+  }
+  
+li a {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #000080;
+}

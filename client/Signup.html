@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./signup.css">
+    <title>Sign Up</title>
 </head>
 <body>
-    
+    <div id="navbar">
+        
+        <ul> 
+            <li id="council-title">Florin Council</li>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+    </div>
+
+    <div id="signup">
+        <H3>Sign up</H3>
+        <label for="email">Email</label>
+        <input type="email" id="email-register" placeholder="Enter Email" required><br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password-resigter" placeholder="Enter Password" required><br><br>
+        <label for="email">Repeat Password</label>
+        <input type="password" id="repeat-password-register" placeholder="Repeat Password" required><br><br>
+        <label for="text">Available Days (Check box on available days)</label><br><br>
+        Mon <br><input type="checkbox" id="available-days-register" >AM
+        <input type="checkbox" id="available-days-register" >PM <br>
+        Tue <br><input type="checkbox" id="available-days-register" >AM
+        <input type="checkbox" id="available-days-register" >PM <br>
+        Wed <br><input type="checkbox" id="available-days-register" >AM
+        <input type="checkbox" id="available-days-register" >PM <br>
+        Thurs <br><input type="checkbox" id="available-days-register" >AM
+        <input type="checkbox" id="available-days-register" >PM <br>
+        Fri <br><input type="checkbox" id="available-days-register" >AM
+        <input type="checkbox" id="available-days-register" >PM <br>
+        Sat <br><input type="checkbox" id="available-days-register" >AM
+        <input type="checkbox" id="available-days-register" >PM <br>
+        Sun <br><input type="checkbox" id="available-days-register" >AM
+        <input type="checkbox" id="available-days-register" >PM <br><br>
+        Others <br> <textarea name="Others" id="textarea" cols="30" rows="3"></textarea><br>
+        <button id="signup-btn">Sign up</button>
+    </div>
 </body>
 </html>
