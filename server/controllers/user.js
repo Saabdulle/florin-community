@@ -1,4 +1,6 @@
 const bcrypt = require("bcrypt");
+const Token = require("../models/token");
+const User = require("../models/user");
 
 async function register (req, res) {
     try {
@@ -18,4 +20,31 @@ async function register (req, res) {
     }
 }
 
-module.exports = {register};
+async function login (req, res) {
+    try {
+        const data = req.body;
+
+        const user = await User.getOneByUsername(data.username);
+        const authenticated = await bcrypt.compare(data.password, user.password);
+
+        if(authenticated){
+            
+            const token = await Token.create(user.id);
+
+            res.status(200).json({
+                authenticated: true,
+                token: token.token
+            });
+        } else {
+            throw new Error("Invalid credentials");
+        }
+    } catch (err) {
+        console.log(err.message);
+        res.status(403).json({
+            error: true,
+            message: err.message
+        })
+    }
+}
+
+module.exports = {register, login};
