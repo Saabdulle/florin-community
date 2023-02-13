@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const logRoutes = require("./middleware/logger");
 
+const postRouter = require('./routers/post');
 const app = express();
 
 app.use(cors());
@@ -14,5 +15,6 @@ app.get("/", (req, res) => {
     })
 })
 
+app.use("/forum", postRouter);
 
 module.exports = app;
