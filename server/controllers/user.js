@@ -47,4 +47,21 @@ async function login (req, res) {
     }
 }
 
-module.exports = {register, login};
+async function logout(req, res) {
+    try {
+        const userToken = req.headers["authorization"];
+        if(userToken == "null"){
+            throw new Error("User not logged in");
+        } else {
+            const token = await Token.getOneByToken(userToken);
+            Token.destroy(token.id);
+        }
+    } catch (err) {
+        res.status(403).json({
+            message: "Unable to logout",
+            error: err.message
+        })
+    }
+}
+
+module.exports = {register, login, logout};
