@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,
+    0.8);
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.banner {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.banner h1 {
+    font-family: "Ballo Da 2", serif;
+    font-size: 8rem;
+    font-weight: 300;
+    color: white;
+    width: 50%;
+    line-height: 9rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
+}
+
+.banner p {
+    font-family: 'Josefin Slab';
+    font-family: 4rem;
+    color: #fff;
+    width: 70%;
+    letter-spacing: 0.1rem;
+    margin-bottom: 3rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
+}
+
+.banner button {
+    width: 25rem;
+    height: 7rem;
+    background-color: #c29525;
+    border: none;
+    font-family: 'Muli', serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.2);
+    box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+
+
+/* NAVBAR CSS START */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgb(205, 205, 205);
+  }
+/* NAVBAR CSS END */
