@@ -1,6 +1,7 @@
 # florin-community
 
 - [Trello board](https://trello.com/b/Bj6NDrQs/florin-county-council)
+- [Figma](https://www.figma.com/file/5ZIo9nWbF0FnOebueTsBX9/Florin-Community)
 - [Project spec](https://github.com/LaFosseAcademy/curriculum/blob/main/lap-2/project/README.md)
 
 ## Must have:
