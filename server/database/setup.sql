@@ -20,7 +20,6 @@ CREATE TABLE token (
     FOREIGN KEY(user_id) REFERENCES user_account("user_id")
 );
 
-
 --  CREATE TABLE thread (
 --      thread_id INT GENERATED ALWAYS AS IDENTITY,
 --      user_id INT NOT NULL,
@@ -40,3 +39,4 @@ CREATE TABLE token (
       PRIMARY KEY(post_id),
       FOREIGN KEY(user_id) REFERENCES user_account("user_id")
   );
+
