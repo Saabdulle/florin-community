@@ -1,165 +1,165 @@
 * {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 /* NAVBAR CSS START */
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(255, 255, 255);
-  }
-  
-  li {
-    float: right;
-  }
-  
-  li a {
-    display: block;
-    font-size: 3rem;
-    font-family: 'Baloo Da 2' serif;
-    color: black;
-    text-align: center;
-    padding: 20px 24px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: rgb(205, 205, 205);
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
 
-  #navbar-icon {
-    position: absolute;
-    right: 85%;
-  }
+li {
+  float: right;
+}
 
-  #donate-button {
-    width: 15rem;
-    height: 5rem;
-    background-color: rgb(0, 0, 55);
-    border: none;
-    border-radius: 2rem;
-    font-family: 'Muli', serif;
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: #fff;
-    margin: 1.2rem 1rem 0 0;
-    text-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.2);
-    box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
-    cursor: pointer;
-  }
+li a {
+  display: block;
+  font-size: 3rem;
+  font-family: 'Baloo Da 2' serif;
+  color: black;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+}
 
-  #donate-button:hover {
-    background-color: rgb(0, 0, 93);
-  }
+li a:hover {
+  background-color: rgb(205, 205, 205);
+}
+
+#navbar-icon {
+  position: absolute;
+  right: 85%;
+}
+
+#donate-button {
+  width: 15rem;
+  height: 5rem;
+  background-color: rgb(0, 0, 55);
+  border: none;
+  border-radius: 2rem;
+  font-family: 'Muli', serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 1.2rem 1rem 0 0;
+  text-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.2);
+  box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+
+#donate-button:hover {
+  background-color: rgb(0, 0, 93);
+}
 /* NAVBAR CSS END */
 
 
 
 /* Welcome page 1 start */
 .header {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    perspective: 100rem;
-    overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  perspective: 100rem;
+  overflow: hidden;
 }
 
 .img-wrapper {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0,0,0,
-    0.8);
-    overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0,
+  0.8);
+  overflow: hidden;
 }
 
 .img-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.5;
-    animation: scale 25s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  animation: scale 25s;
 }
 
 @keyframes scale {
-    0% {
-     transform: scale(1.3);
-    }
-    100% {
-     transform: scale(1);
-    }
+  0% {
+   transform: scale(1.3);
+  }
+  100% {
+   transform: scale(1);
+  }
 }
 
 .banner {
-    position: absolute;
-    top: 20%;
-    left: 10%;
+  position: absolute;
+  top: 20%;
+  left: 10%;
 }
 
 .banner h1 {
-    font-family: "Ballo Da 2", serif;
-    font-size: 6rem;
-    font-weight: 300;
-    color: white;
-    width: 50%;
-    line-height: 9rem;
-    letter-spacing: 0.2rem;
-    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
-    opacity: 0;
-    animation: moveBanner 1s 0.5s forwards;
+  font-family: "Ballo Da 2", serif;
+  font-size: 6rem;
+  font-weight: 300;
+  color: white;
+  width: 50%;
+  line-height: 9rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
+  opacity: 0;
+  animation: moveBanner 1s 0.5s forwards;
 }
 
 .banner p {
-    font-family: 'Josefin Slab';
-    font-size: 3rem;
-    color: #fff;
-    width: 70%;
-    letter-spacing: 0.1rem;
-    margin-bottom: 3rem;
-    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
-    opacity: 0;
-    animation: moveBanner 1s 0.7s forwards;
+  font-family: 'Josefin Slab';
+  font-size: 3rem;
+  color: #fff;
+  width: 70%;
+  letter-spacing: 0.1rem;
+  margin-bottom: 3rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
+  opacity: 0;
+  animation: moveBanner 1s 0.7s forwards;
 }
 
 .banner button {
-    width: 25rem;
-    height: 7rem;
-    background-color: #c29525;
-    border: none;
-    font-family: 'Muli', serif;
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: #fff;
-    text-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.2);
-    box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
-    cursor: pointer;
-    opacity: 0;
-    animation: moveBanner 1s 0.9s forwards;
+  width: 25rem;
+  height: 7rem;
+  background-color: #c29525;
+  border: none;
+  font-family: 'Muli', serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.2);
+  box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
+  cursor: pointer;
+  opacity: 0;
+  animation: moveBanner 1s 0.9s forwards;
 }
 
 .banner button:hover {
-    background-color: #ffc32c;
+  background-color: #ffc32c;
 }  
 
 @keyframes moveBanner {
-    0% {
-        transform: translateY(40rem) rotateY(-20deg)
-    }
-    100% {
-        transform: translateY(0)
-        rotateY(0);
-        opacity: 1;
-    }
+  0% {
+      transform: translateY(40rem) rotateY(-20deg)
+  }
+  100% {
+      transform: translateY(0)
+      rotateY(0);
+      opacity: 1;
+  }
 }
 /* Welcome page 1 end */
 
@@ -167,41 +167,41 @@ ul {
 /* About us start */
 
 .about {
-    background-color: rgb(231, 231, 231);
+  background-color: rgb(231, 231, 231);
 }
 
 .banner h2 {
-    font-family: "Ballo Da 2", serif;
-    font-size: 6rem;
-    font-weight: 300;
-    color: black;
-    width: 50%;
-    line-height: 9rem;
-    letter-spacing: 0.2rem;
-    text-shadow: none;
+  font-family: "Ballo Da 2", serif;
+  font-size: 6rem;
+  font-weight: 300;
+  color: black;
+  width: 50%;
+  line-height: 9rem;
+  letter-spacing: 0.2rem;
+  text-shadow: none;
 }
 
 #about-p {
-    color: grey;
-    text-shadow: none;
-    width: 50%;
+  color: grey;
+  text-shadow: none;
+  width: 50%;
 }
 
 #about-button {
-    width: 18rem;
-    height: 5rem;
-    background-color: #4CAF50;
-    border: none;
-    font-family: 'Muli', serif;
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: white;
-    box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
-    cursor: pointer;
+  width: 18rem;
+  height: 5rem;
+  background-color: #4CAF50;
+  border: none;
+  font-family: 'Muli', serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
+  cursor: pointer;
 }
 
 #about-button:hover {
-    background-color: #60dc64;
+  background-color: #60dc64;
 }
 /* About us end */
 
@@ -210,116 +210,116 @@ ul {
 
 /* Learn more CSS Start */
 .section-2 {
-    height: 100vh;
-    background-color: #4CAF50;
-    padding: 5rem 0;
+  height: 100vh;
+  background-color: #4CAF50;
+  padding: 5rem 0;
 }
 
 .section-heading {
-    font-family: "Ballo Da 2", serif;
-    font-size: 6rem;
-    font-weight: 300;
-    color: white;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 0.2rem;
-    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
+  font-family: "Ballo Da 2", serif;
+  font-size: 6rem;
+  font-weight: 300;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
 }
 
 .entry {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
 }
 
 .entry-link {
-    position: relative;
-    margin: 4rem 1rem;
+  position: relative;
+  margin: 4rem 1rem;
 }
 
 .entry-link::before {
-    content:"";
-    position: absolute;
-    top: 2vw;
-    left: 80%;
-    width: 0.2rem;
-    height: 0;
-    background-color: white;
-    z-index: 10;
-    transition: height 0.5s;
+  content:"";
+  position: absolute;
+  top: 2vw;
+  left: 80%;
+  width: 0.2rem;
+  height: 0;
+  background-color: white;
+  z-index: 10;
+  transition: height 0.5s;
 }
 
 .entry-link::after {
-    content:"";
-    position: absolute;
-    top: 30%;
-    left: 2rem;
-    width: 0;
-    height: 0.2rem;
-    background-color: white;
-    transition: width 0.5s;
+  content:"";
+  position: absolute;
+  top: 30%;
+  left: 2rem;
+  width: 0;
+  height: 0.2rem;
+  background-color: white;
+  transition: width 0.5s;
 }
 
 .entry-link:hover::before {
-    height: 80%;
+  height: 80%;
 }
 
 .entry-link:hover::after {
-    width: 90%;
+  width: 90%;
 }
 
 .entry-img {
-    width: 24vw;
-    height: 15vw;
-    object-fit: cover;
-    transition: all 0.5s;
+  width: 24vw;
+  height: 15vw;
+  object-fit: cover;
+  transition: all 0.5s;
 }
 
 .entry-link:hover .entry-img {
-    filter: blur(0.5rem);
-    opacity: 0.5;
+  filter: blur(0.5rem);
+  opacity: 0.5;
 }
 
 .entry-name {
-    position: absolute;
-    top: 3rem;
-    left: 3rem;
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    color: #fff;
-    width: 0;
-    overflow: hidden;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  width: 0;
+  overflow: hidden;
 }
 
 .entry-link:hover .entry-name {
-    width: 100%;
+  width: 100%;
 }
 
 .entry-description {
-    position: absolute;
-    bottom: 3vw;
-    left: 2rem;
-    width: 70%;
-    font-size: 1.5rem;
-    font-weight: 300;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-    color: white;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s;
+  position: absolute;
+  bottom: 3vw;
+  left: 2rem;
+  width: 70%;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
 }
 
 .entry-link:hover .entry-description {
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 1s 1s;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s 1s;
 }
 /* Learn more CSS end*/
 
@@ -328,66 +328,67 @@ ul {
 /* Volunteer task form start*/
 
 .container-tasks {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: rgb(231, 231, 231);
-  }
-  
-  .header-tasks {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  #volunteer-input-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #f1f1f1;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  input[type="text"],
-  input[type="date"] {
-    border: none;
-    border-radius: 5px;
-    font-size: 2rem;
-    padding: 30px;
-    margin: 10px;
-    width: 100%;
-    box-sizing: border-box;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(231, 231, 231);
+}
 
-  select {
-    border: none;
-    border-radius: 5px;
-    font-size: 2rem;
-    padding: 20px;
-    margin: 10px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  
-  #add-entry {
-    background-color: #4CAF50;
-    font-size: 2rem;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 20px 40px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  #add-entry:hover {
-    background-color: #3e8e41;
-  }
-  
+.header-tasks {
+  text-align: center;
+  padding: 20px;
+}
+
+#volunteer-input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+select {
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 15px;
+  margin: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+#add-entry {
+  background-color: #4CAF50;
+  font-size: 2rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#add-entry:hover {
+  background-color: #3e8e41;
+}
+
 
 /* Volunteer task form end*/
 
@@ -396,77 +397,78 @@ ul {
 
 /* Footer css start */
 .section-4 {
-    width: 100%;
-    height: 30vh;
-    background-color: #222;
-    display: flex;
-    justify-content: space-around;
-    padding: 3rem 0;
-    position: relative;
-    align-items: flex-start;
-  }
-  
-  .section-4-text {
-    text-transform: uppercase;
-  }
-  
-  .section-4-heading {
-    font-size: 4rem;
-    font-weight: 900;
-    color: #a79a2d;
-  }
-  
-  .section-4-paragraph {
-    font-size: 1.5rem;
-    color: #888;
-  }
-  
-  .signup-form {
-    /* position: relative; */
-    display: flex;
-    align-items: center;
-  }
-  
-  .signup-form-input {
-    width: 35rem;
-    height: 5rem;
-    padding: 1rem;
-    border: 0.2rem solid #a79a2d;
-    font-size: 1.6rem;
-    font-weight: 700;
-    letter-spacing: 0.1rem;
-    color: #a79a2d;
-  }
-  
-  .signup-form-input::placeholder {
-    color: #a79a2d;
-  }
-  
-  .signup-form-btn {
-    position: relative;
-    left: -4.5rem;
-    width: 4rem;
-    height: 4rem;
-    background-color: #333;
-    color: #a79a2d;
-    border: none;
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
-  
-  .copyright {
-    position: absolute;
-    bottom: 3rem;
-    font-size: 1.7rem;
-    font-weight: 200;
-    color: #eee;
-    letter-spacing: 0.1rem;
-    border-top: 0.1rem solid #888;
-    padding-top: 6rem;
-    width: 100%;
-    text-align: center;
-  }
+  width: 100%;
+  height: 30vh;
+  background-color: #222;
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 0;
+  position: relative;
+  align-items: flex-start;
+}
+
+.section-4-text {
+  text-transform: uppercase;
+}
+
+.section-4-heading {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #a79a2d;
+}
+
+.section-4-paragraph {
+  font-size: 1.5rem;
+  color: #888;
+}
+
+.signup-form {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+}
+
+.signup-form-input {
+  width: 35rem;
+  height: 5rem;
+  padding: 1rem;
+  border: 0.2rem solid #a79a2d;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: #a79a2d;
+}
+
+.signup-form-input::placeholder {
+  color: #a79a2d;
+}
+
+.signup-form-btn {
+  position: relative;
+  left: -4.5rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: #333;
+  color: #a79a2d;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 3rem;
+  font-size: 1.7rem;
+  font-weight: 200;
+  color: #eee;
+  letter-spacing: 0.1rem;
+  border-top: 0.1rem solid #888;
+  padding-top: 6rem;
+  width: 100%;
+  text-align: center;
+}
 /* Footer css end */
+
 
 
 
