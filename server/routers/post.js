@@ -3,7 +3,7 @@ const postController = require("../controllers/post");
 
 const postRouter = Router();
 
-postRouter.get("/forum", postController.index);
-postRouter.post("/forum", postController.create);
+postRouter.get("/", postController.index);
+postRouter.post("/", postController.create);
 
 module.exports = postRouter;
