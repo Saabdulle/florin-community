@@ -2,6 +2,7 @@ DROP TABLE IF EXISTS token;
 DROP TABLE IF EXISTS post;
 DROP TABLE IF EXISTS thread;
 DROP TABLE IF EXISTS user_account;
+DROP TABLE IF EXISTS volunteers;
 
 
 CREATE TABLE user_account (
@@ -39,4 +40,13 @@ CREATE TABLE token (
       PRIMARY KEY(post_id),
       FOREIGN KEY(user_id) REFERENCES user_account("user_id")
   );
+
+ CREATE TABLE volunteers (
+    volunteer_id SERIAL PRIMARY KEY,
+    volunteer_full_name TEXT NOT NULL,
+    volunteer_task TEXT NOT NULL,
+    date DATE NOT NULL,
+    task_time TIME NOT NULL,
+    volunteer_email TEXT NOT NULL
+);
 

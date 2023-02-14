@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Welcome Page</title>
-    <script src="./assets/welcome.js"></script>
+    <script src="../JS/welcome.js" defer></script>
     <script src="https://kit.fontawesome.com/fadd4523d1.js" crossorigin="anonymous" defer></script>
-    <link rel="stylesheet" href="./welcome.css">
+    <link rel="stylesheet" href="../CSS/welcome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,20 +21,20 @@
     <ul class="horizontal gray">
 
         <li><button id="donate-button">Donate</button></li>
-        <li><a href="./signup.html">Sign up</a></li>
-        <li><a href="./signin.html">Log in</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="./welcome.html">Home</a></li>
-        <li><a href="#" id="navbar-icon">Civic Coders</a></li>
+        <li><a href="../HTML/Signup.html">Sign up</a></li>
+        <li><a href="../HTML/signin.html">Log in</a></li>
+        <li><a href="../HTML/about.html">About</a></li>
+        <li><a href="../HTML/contact.html">Contact</a></li>
+        <li><a href="../HTML/welcome.html">Home</a></li>
+        <li><a href="../HTML/welcome.html" id="navbar-icon">Civic Coders</a></li>
     </ul>
     <!-- Navbar end  -->
     <!-- Main Welcome Page UI start -->
     <div class="container">
         <header class="header">
             <div class="img-wrapper">
-                <img class="img-wrapper" src="./assets/martina-ferreira-v_eeqDEFVTY-unsplash.jpg">
+
+                <img class="img-wrapper" src="../assets/martina-ferreira-v_eeqDEFVTY-unsplash.jpg">
             </div>
             <div class="banner">
                 <h1>Volunteer in your community today for a better tomorrow</h1>
@@ -103,9 +103,7 @@
     <!-- Volunteer tasks start -->
     <div class="container-tasks">
         <header class="header-tasks">
-
                 <form id="volunteer-input-form">
-
                     <label for="Full name"></label>
                     <input type="text" name="Full name" placeholder="Full name" required>
                     <br><br>
@@ -122,6 +120,10 @@
 
                     <label for="Date"></label>
                     <input type="date" name="Date" placeholder="Date" required>
+                    <br><br>
+
+                    <label for="start-time"></label>
+                    <input type="time" name="task-time" id="start-time" required>
                     <br><br>
 
                     <label for="Email address"></label>
