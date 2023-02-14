@@ -37,11 +37,12 @@ li a:hover {
 #sign-up{
     border: solid 5px blanchedalmond;
     margin: auto;
-    width: 50%;
+    width: 40%;
     padding: 10px;
-   
-    
-  
+    justify-content: center;
+}
+.reg{
+    align-items: center;
 }
 /* 
 #sign-up {
