@@ -39,7 +39,7 @@ async function login (req, res) {
             throw new Error("Invalid credentials");
         }
     } catch (err) {
-        console.log(err.message);
+        console.log("controller", err.message);
         res.status(403).json({
             error: true,
             message: err.message
