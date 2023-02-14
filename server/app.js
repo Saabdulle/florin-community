@@ -16,12 +16,12 @@ app.use("/", express.static(path.join(__dirname, "..", "client")));
 
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "..", "client", "welcome.html"));
+    res.sendFile(path.join(__dirname, "..", "client", "HTML", "welcome.html"));
 
 })
 
 app.use("/forum", postRouter);
 app.use("/users", userRouter);
-app.use("/users", volunteerRouter);
+app.use("/volunteer", volunteerRouter);
 
 module.exports = app;
