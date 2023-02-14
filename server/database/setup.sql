@@ -42,11 +42,11 @@ CREATE TABLE token (
   );
 
  CREATE TABLE volunteers (
-    id SERIAL PRIMARY KEY,
-    full_name TEXT NOT NULL,
-    task TEXT NOT NULL,
+    volunteer_id SERIAL PRIMARY KEY,
+    volunteer_full_name TEXT NOT NULL,
+    volunteer_task TEXT NOT NULL,
     date DATE NOT NULL,
     task_time TIME NOT NULL,
-    email TEXT NOT NULL
+    volunteer_email TEXT NOT NULL
 );
 
