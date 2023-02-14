@@ -11,6 +11,59 @@ html {
     font-size: 62.5%;
 }
 
+/* NAVBAR CSS START */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    font-size: 3rem;
+    font-family: 'Baloo Da 2' serif;
+    color: black;
+    text-align: center;
+    padding: 20px 24px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgb(205, 205, 205);
+  }
+
+  #navbar-icon {
+    position: absolute;
+    right: 85%;
+  }
+
+  #donate-button {
+    width: 15rem;
+    height: 5rem;
+    background-color: rgb(0, 0, 55);
+    border: none;
+    border-radius: 2rem;
+    font-family: 'Muli', serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 1.2rem 1rem 0 0;
+    text-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.2);
+    box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
+    cursor: pointer;
+  }
+
+  #donate-button:hover {
+    background-color: rgb(0, 0, 93);
+  }
+/* NAVBAR CSS END */
+
 
 
 /* Welcome page 1 start */
@@ -94,6 +147,10 @@ html {
     animation: moveBanner 1s 0.9s forwards;
 }
 
+.banner button:hover {
+    background-color: #ffc32c;
+}  
+
 @keyframes moveBanner {
     0% {
         transform: translateY(40rem) rotateY(-20deg)
@@ -107,9 +164,53 @@ html {
 /* Welcome page 1 end */
 
 
+/* About us start */
+
+.about {
+    background-color: rgb(231, 231, 231);
+}
+
+.banner h2 {
+    font-family: "Ballo Da 2", serif;
+    font-size: 6rem;
+    font-weight: 300;
+    color: black;
+    width: 50%;
+    line-height: 9rem;
+    letter-spacing: 0.2rem;
+    text-shadow: none;
+}
+
+#about-p {
+    color: grey;
+    text-shadow: none;
+    width: 50%;
+}
+
+#about-button {
+    width: 18rem;
+    height: 5rem;
+    background-color: rgb(0, 196, 0);
+    border: none;
+    font-family: 'Muli', serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+#about-button:hover {
+    background-color: rgb(0, 255, 0);
+}
+
+
+
+/* About us end */
+
+
 
 /* Footer css start */
-
 .section-4 {
     width: 100%;
     height: 30vh;
@@ -196,29 +297,4 @@ html {
 
 
 
-/* NAVBAR CSS START */
-/* ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-  }
-  
-  li {
-    float: right;
-  }
-  
-  li a {
-    display: block;
-    font-size: 4rem;
-    color: black;
-    text-align: center;
-    padding: 40px 24px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: rgb(205, 205, 205);
-  } */
-/* NAVBAR CSS END */
+
