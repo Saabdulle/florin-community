@@ -1,4 +1,5 @@
 const Post = require("../models/post.js");
+const User = require("../models/user");
 
 async function index(req, res) {
     try {
@@ -19,11 +20,15 @@ async function show(req, res) {
     }
 }
 async function create(req, res) {
+   
     try {
         const data = req.body;
+        const user = await User.getOneByUsername(data.username);
+       
         const checkValues = ["post_body", "title"].every(p => Object.hasOwn(data, p))
         if (checkValues) {
-            const post = await Post.create(data);
+            
+            const post = await Post.create(data,user.id);
             res.status(201).send(post);
         } else {
             res.status(404).json({
