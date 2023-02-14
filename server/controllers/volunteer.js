@@ -4,7 +4,7 @@ const Volunteer = require("../models/volunteers");
 async function createVolunteer (req, res) {
 
     // Read the body
-    const body = await req.body
+    const body = req.body
     console.log(body);
 
     try {
