@@ -1,7 +1,7 @@
-const Volunteer = require("../models/volunteer");
+const Volunteer = require("../models/volunteers");
 
 
-async function create (req, res) {
+async function createVolunteer (req, res) {
 
     // Read the body
     const body = req.body
@@ -22,5 +22,5 @@ async function create (req, res) {
 }
 
 module.exports = {
-    create
+    createVolunteer
 }

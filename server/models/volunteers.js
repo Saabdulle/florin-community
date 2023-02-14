@@ -11,7 +11,7 @@ class Volunteer {
         this.volunteer_email;
     }
 
-    static async create({ name, description, date, task_time, email }) {
+    static async createVolunteer({ name, description, date, task_time, email }) {
         const response = await db.query('INSERT INTO volunteers (volunteer_full_name, volunteer_task, date, task_time, volunteer_email) VALUES ($1, $2, $3, $4, $5) RETURNING *;', [name, description, date, task_time, email]);
 
         return response.rows.map(v => new Volunteer(v))
