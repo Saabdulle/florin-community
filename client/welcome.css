@@ -190,7 +190,7 @@ ul {
 #about-button {
     width: 18rem;
     height: 5rem;
-    background-color: rgb(0, 196, 0);
+    background-color: #4CAF50;
     border: none;
     font-family: 'Muli', serif;
     font-size: 2rem;
@@ -201,7 +201,7 @@ ul {
 }
 
 #about-button:hover {
-    background-color: rgb(0, 255, 0);
+    background-color: #60dc64;
 }
 /* About us end */
 
@@ -211,7 +211,7 @@ ul {
 /* Learn more CSS Start */
 .section-2 {
     height: 100vh;
-    background-color: rgb(0,196,0);
+    background-color: #4CAF50;
     padding: 5rem 0;
 }
 
@@ -323,6 +323,73 @@ ul {
 }
 /* Learn more CSS end*/
 
+
+
+/* Volunteer task form start*/
+
+.container-tasks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(231, 231, 231);
+  }
+  
+  .header-tasks {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #volunteer-input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"],
+  input[type="date"] {
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    padding: 30px;
+    margin: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  select {
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  
+  #add-entry {
+    background-color: #4CAF50;
+    font-size: 2rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 40px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #add-entry:hover {
+    background-color: #3e8e41;
+  }
+  
+
+/* Volunteer task form end*/
 
 
 

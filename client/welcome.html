@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Welcome Page</title>
     <script src="../static/welcome.js"></script>
+    <script src="https://kit.fontawesome.com/fadd4523d1.js" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="./welcome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <!-- Navbar start --> 
+    <!-- Navbar start -->
     <ul class="horizontal gray">
-        
+
         <li><button id="donate-button">Donate</button></li>
         <li><a href="./Signup.html">Sign up</a></li>
         <li><a href="./signin.html">Log in</a></li>
@@ -23,9 +28,9 @@
         <li><a href="#">News</a></li>
         <li><a href="./welcome.html">Home</a></li>
         <li><a href="#" id="navbar-icon">Civic Coders</a></li>
-      </ul>
-      <!-- Navbar end  -->
-      <!-- Main Welcome Page UI start --> 
+    </ul>
+    <!-- Navbar end  -->
+    <!-- Main Welcome Page UI start -->
     <div class="container">
         <header class="header">
             <div class="img-wrapper">
@@ -48,7 +53,9 @@
             <div class="banner">
                 <h2 class="about-header">Your community needs you!</h2>
                 <br><br>
-                <p id="about-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p id="about-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit.</p>
                 <button id="about-button" onclick="scrollToInitiatives()">Learn more</button>
             </div>
         </header>
@@ -60,74 +67,76 @@
         <h1 class="section-heading">Initiatives</h1>
         <div class="entry">
             <a href="#" class="entry-link">
-            <img src="" class="entry-img">
-            <h3 class="entry-name">Recycling</h3>
-            <p class="entry-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        </a>
+                <img src="" class="entry-img">
+                <h3 class="entry-name">Recycling</h3>
+                <p class="entry-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </a>
             <a href="#" class="entry-link">
-            <img src="" class="entry-img">
-            <h3 class="entry-name">Library Volunteer</h3>
-            <p class="entry-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        </a>
+                <img src="" class="entry-img">
+                <h3 class="entry-name">Library Volunteer</h3>
+                <p class="entry-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </a>
             <a href="#" class="entry-link">
-            <img src="" class="entry-img">
-            <h3 class="entry-name">Green Volunteer</h3>
-            <p class="entry-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        </a>
+                <img src="" class="entry-img">
+                <h3 class="entry-name">Green Volunteer</h3>
+                <p class="entry-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </a>
             <a href="#" class="entry-link">
-            <img src="" class="entry-img">
-            <h3 class="entry-name">Green Marketplace</h3>
-            <p class="entry-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        </a>
+                <img src="" class="entry-img">
+                <h3 class="entry-name">Green Marketplace</h3>
+                <p class="entry-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </a>
             <a href="#" class="entry-link">
-            <img src="" class="entry-img">
-            <h3 class="entry-name">Art and heritage</h3>
-            <p class="entry-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        </a>
+                <img src="" class="entry-img">
+                <h3 class="entry-name">Art and heritage</h3>
+                <p class="entry-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </a>
             <a href="#" class="entry-link">
-            <img src="" class="entry-img">
-            <h3 class="entry-name">Scouts</h3>
-            <p class="entry-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        </a>
+                <img src="" class="entry-img">
+                <h3 class="entry-name">Scouts</h3>
+                <p class="entry-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </a>
         </div>
     </section>
     <!-- Learn more end-->
 
-    <!-- About us start -->
-    <div class="container">
-        <header class="header">
-            <div class="banner">
+    <!-- Volunteer tasks start -->
+    <div class="container-tasks">
+        <header class="header-tasks">
 
-                <form id="diary-input-form">
+                <form id="volunteer-input-form">
 
-                    <label for="entry-name-input">Entry name:</label>
-                    <input type="text" id="entry-name-input" placeholder="Entry Title">
+                    <label for="Full name"></label>
+                    <input type="text" name="Full name" placeholder="Full name" required>
                     <br><br>
 
-                    <label for="diary-input-content">Entry content:</label>
-                    <input type="text" id="diary-input-content" placeholder="Entry content">
+                    <label for="Task"></label>
+                    <select name="Task">
+                        <option value="" disabled selected>Choose an option:</option>
+                        <option value="Recycling">Recycling</option>
+                        <option value="Library Volunteering">Library Volunteering</option>
+                        <option value="Green Volunteering">Green Volunteering</option>
+                        <option value="Scouts Volunteering">Scouts Volunteering</option>
+                      </select>
                     <br><br>
 
-                    <label for="diary-input-content">Entry content:</label>
-                    <input type="text" id="diary-input-content" placeholder="Entry content">
+                    <label for="Date"></label>
+                    <input type="date" name="Date" placeholder="Date" required>
                     <br><br>
 
-                    <label for="diary-input-content">Entry content:</label>
-                    <input type="text" id="diary-input-content" placeholder="Entry content">
-                    <br><br>
-                    
-                    <label for="diary-input-content">Entry content:</label>
-                    <input type="text" id="diary-input-content" placeholder="Entry content">
+                    <label for="Email address"></label>
+                    <input type="text" name="Email" placeholder="Email address" required>
                     <br><br>
 
-                    <input type="submit" id="add-entry">Add a diary entry</input>
+                    <input type="submit" id="add-entry"></input>
 
-                  </form>
+                </form>
 
-            </div>
         </header>
     </div>
-    <!-- About us end -->
+    <!-- Volunteer tasks end -->
+
+
 
     <!-- Footer start -->
     <section class="section-4">
@@ -147,4 +156,5 @@
     </section>
     <!-- Footer end -->
 </body>
+
 </html>
