@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/signup.css">
+    <script src="../JS/signup.js" defer></script>
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div id="navbar">
+         <!-- Navbar start -->
+    <ul class="horizontal gray">
+
+        <li><button id="donate-button">Donate</button></li>
+        <li><a href="../HTML/Signup.html">Sign up</a></li>
+        <li><a href="../HTML/signin.html">Log in</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="../HTML/welcome.html">Home</a></li>
+        <li><a href="../HTML/welcome.html" id="navbar-icon">Civic Coders</a></li>
+    </ul>
+    <!-- Navbar end  -->
+    </div>
+
+    <div id="sign-up">
+        <H3>Sign up</H3>
+        <form id="signup-form">
+            <label class="reg" for="username-register">Username</label>
+            <input type="text" id="username-register" name="username" placeholder="Enter Username" required><br><br>
+            <label class="reg" for="email-register">Email</label>
+            <input type="email" id="email-register" name="email" placeholder="Enter Email" required><br><br>
+            <label class="reg" for="password-register">Password</label>
+            <input type="password" id="password-register" name="password" placeholder="Enter Password" required><br><br>
+            <label class="reg" for="repeat-password-register">Repeat Password</label>
+            <input type="password" id="repeat-password-register" name="repeat-password" placeholder="Repeat Password" required><br><br>
+            <label class="reg" for="text">Available Days (Check box on available days)</label><br><br>
+            
+            Monday<br><input type="checkbox" id="available-days-register"><br>
+            Tuesday<br><input type="checkbox" id="available-days-register"> <br>
+            Wednesday<br><input type="checkbox" id="available-days-register"> <br>
+            Thursday<br><input type="checkbox" id="available-days-register"> <br>
+            Friday<br><input type="checkbox" id="available-days-register"><br>
+            Saturday<br><input type="checkbox" id="available-days-register"><br>
+            Sunday<br><input type="checkbox" id="available-days-register"><br><br>
+            <label for="textarea">Others</label><br>
+            <textarea name="Others" id="textarea" cols="30" rows="3"></textarea><br>
+            
+            <input type="submit" value="Sign up">
+        </form>
+    </div>
+</body>
+
+</html>
