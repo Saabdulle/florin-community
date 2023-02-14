@@ -6,7 +6,7 @@ const volunteerRouter = Router(); // Handles all volunteer requests
 
 
 // Route definitions
-volunteerRouter.post("/", volunteerController.create);
+volunteerRouter.post("/", volunteerController.createVolunteer);
 
 
 module.exports = volunteerRouter;
