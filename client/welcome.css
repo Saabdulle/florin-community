@@ -17,7 +17,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
   }
   
   li {
@@ -190,7 +190,7 @@ ul {
 #about-button {
     width: 18rem;
     height: 5rem;
-    background-color: rgb(0, 196, 0);
+    background-color: #4CAF50;
     border: none;
     font-family: 'Muli', serif;
     font-size: 2rem;
@@ -201,12 +201,196 @@ ul {
 }
 
 #about-button:hover {
-    background-color: rgb(0, 255, 0);
+    background-color: #60dc64;
+}
+/* About us end */
+
+
+
+
+/* Learn more CSS Start */
+.section-2 {
+    height: 100vh;
+    background-color: #4CAF50;
+    padding: 5rem 0;
 }
 
+.section-heading {
+    font-family: "Ballo Da 2", serif;
+    font-size: 6rem;
+    font-weight: 300;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
+}
+
+.entry {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.entry-link {
+    position: relative;
+    margin: 4rem 1rem;
+}
+
+.entry-link::before {
+    content:"";
+    position: absolute;
+    top: 2vw;
+    left: 80%;
+    width: 0.2rem;
+    height: 0;
+    background-color: white;
+    z-index: 10;
+    transition: height 0.5s;
+}
+
+.entry-link::after {
+    content:"";
+    position: absolute;
+    top: 30%;
+    left: 2rem;
+    width: 0;
+    height: 0.2rem;
+    background-color: white;
+    transition: width 0.5s;
+}
+
+.entry-link:hover::before {
+    height: 80%;
+}
+
+.entry-link:hover::after {
+    width: 90%;
+}
+
+.entry-img {
+    width: 24vw;
+    height: 15vw;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.entry-link:hover .entry-img {
+    filter: blur(0.5rem);
+    opacity: 0.5;
+}
+
+.entry-name {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    width: 0;
+    overflow: hidden;
+}
+
+.entry-link:hover .entry-name {
+    width: 100%;
+}
+
+.entry-description {
+    position: absolute;
+    bottom: 3vw;
+    left: 2rem;
+    width: 70%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+}
+
+.entry-link:hover .entry-description {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s 1s;
+}
+/* Learn more CSS end*/
 
 
-/* About us end */
+
+/* Volunteer task form start*/
+
+.container-tasks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(231, 231, 231);
+  }
+  
+  .header-tasks {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #volunteer-input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"],
+  input[type="date"] {
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    padding: 30px;
+    margin: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  select {
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  
+  #add-entry {
+    background-color: #4CAF50;
+    font-size: 2rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 40px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #add-entry:hover {
+    background-color: #3e8e41;
+  }
+  
+
+/* Volunteer task form end*/
+
 
 
 

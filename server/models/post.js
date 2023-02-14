@@ -19,14 +19,14 @@ class Post {
         // Add error handling
         return new Post(response.rows[0]);
     }
-    static async create(data,user_id,thread_id){
+    static async create(data,user_id){
         let q = {
-            text: "INSERT INTO  (title, post_body) VALUES ($1, $2) RETURNING post_id;",
-            values: [data.title, data.post_body]
+            text: "INSERT INTO post (title, post_body, user_id) VALUES ($1, $2, $3) RETURNING post_id;",
+            values: [data.title, data.post_body,user_id]
         }
         let response = await db.query(q);
-        const newUser = await User.getOneById(response.rows[0].user_id)
-        return newUser;
+        const newPost = await Post.getOneById(response.rows[0].post_id)
+        return newPost;
     }
 }
 
