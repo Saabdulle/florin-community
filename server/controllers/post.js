@@ -25,7 +25,7 @@ async function create(req, res) {
         const data = req.body;
         const user = await User.getOneByUsername(data.username);
        
-        const checkValues = ["post_body", "title"].every(p => Object.hasOwn(data, p))
+        const checkValues = ["post_body", "post_title"].every(p => Object.hasOwn(data, p))
         if (checkValues) {
             
             const post = await Post.create(data,user.id);
