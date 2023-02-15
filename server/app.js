@@ -5,6 +5,7 @@ const path = require("path");
 const logRoutes = require("./middleware/logger");
 const postRouter = require('./routers/post');
 const userRouter = require("./routers/user");
+const threadRouter = require("./routers/thread");
 const volunteerRouter = require("./routers/volunteer");
 const app = express();
 
@@ -18,6 +19,7 @@ app.get("/", (req, res) => {
 
 })
 
+app.use("/thread", threadRouter);
 app.use("/forum", postRouter);
 app.use("/users", userRouter);
 app.use("/volunteer", volunteerRouter);
