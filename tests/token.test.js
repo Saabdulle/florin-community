@@ -1,6 +1,6 @@
-
 const Token = require("../server/models/token")
 const { getOneById } = require("../server/models/token")
+
 
 describe("getOneById", () =>{
     it("exists", () => {
