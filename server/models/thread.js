@@ -1,10 +1,11 @@
 const db = require("../database/connect");
 
 class Thread {
-    constructor({thread_id, user_id, thread_title, thread_date}) {
+    constructor({thread_id, user_id, thread_title, thread_body, thread_date}) {
         this.id = thread_id;
         this.user_id = user_id;
         this.title = thread_title;
+        this.body = thread_body;
         this.date = thread_date;
     }
 

@@ -16,8 +16,8 @@ INSERT INTO thread
     (user_id, thread_title, thread_body)
 VALUES
     (3, 'Thread 1', 'Thread body 1'),
-    (2, 'Thread 1', 'Thread body 1'),
-    (1, 'Thread 1', 'Thread body 1');
+    (2, 'Thread 2', 'Thread body 2'),
+    (1, 'Thread 3', 'Thread body 3');
 
 INSERT INTO post (user_id, thread_id, post_title, post_body) VALUES
   (1, 1, 'Post 1', 'Content 1'),
