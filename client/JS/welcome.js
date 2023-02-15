@@ -1,3 +1,45 @@
+
+
+const volunteerForm = document.querySelector("#volunteer-input-form")
+volunteerForm.addEventListener("submit", (e) => {
+  e.preventDefault()
+  const userData = { 
+    name: document.querySelector("#ans1").value,
+    description: document.querySelector("#ans2").value,
+    date: document.querySelector("#ans3").value,
+    task_time: document.querySelector("#ans4").value,
+    email: document.querySelector("#ans5").value,
+  }
+
+  const sendVolunteer = async () => {
+    try {
+      const data = await axios.post("http://localhost:3000/volunteer", userData)
+      document.querySelector("#ans1").value = ""
+      document.querySelector("#ans6").value = ""
+    } catch (err) {
+      console.log(err)
+    }
+  }
+  sendVolunteer()
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const form = document.getElementById('volunteer-input-form');
 // const submitButton = document.getElementById('add-entry');
 
@@ -28,52 +70,51 @@
 
 
 
-let answer1 = document.getElementById("ans1");
-let answer2 = document.getElementById("ans2");
-let answer3 = document.getElementById("ans3");
-let answer4 = document.getElementById("ans4");
-let answer5 = document.getElementById("ans5");
-let answer6 = document.getElementById("ans6");
-let data = {};
-let arrCat = ["History","Art","Music","English"]
+// let answer1 = document.getElementById("ans1");
+// let answer2 = document.getElementById("ans2");
+// let answer3 = document.getElementById("ans3");
+// let answer4 = document.getElementById("ans4");
+// let answer5 = document.getElementById("ans5");
+// let answer6 = document.getElementById("ans6");
+// let data = {};
 
 
-async function addData() {
+// async function addData() {
 
 
 
 
-  data = {
-    'content': question.value,
-    'answer1': answer1.value,
-    'answer2': answer2.value,
-    'answer3': answer3.value,
-    'answer4': answer4.value,
-    'corAnswer': corAnswer.value,
-    'category': category.value,
-    'corIndex': parseInt(corIndex.value)
-  }
+//   data = {
+//     'content': question.value,
+//     'answer1': answer1.value,
+//     'answer2': answer2.value,
+//     'answer3': answer3.value,
+//     'answer4': answer4.value,
+//     'corAnswer': corAnswer.value,
+//     'category': category.value,
+//     'corIndex': parseInt(corIndex.value)
+//   }
 
-  console.log(data)
-  const options = {
-    method: "POST",
-    body: JSON.stringify(data),
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-    }
-  }
+//   console.log(data)
+//   const options = {
+//     method: "POST",
+//     body: JSON.stringify(data),
+//     headers: {
+//       'Accept': 'application/json',
+//       'Content-Type': 'application/json'
+//     }
+//   }
 
-  const response = await fetch("http://localhost:3000/flashcard", options)
+//   const response = await fetch("http://localhost:3000/volunteer", options)
 
-  if (response.status == 201) {
-    alert("list of flashcards has been successfully updated!!!")
-    location.reload();
-  } else {
-    alert("please fill in the form with the correct information")
-  }
+//   if (response.status == 201) {
+//     alert("list of flashcards has been successfully updated!!!")
+//     location.reload();
+//   } else {
+//     alert("please fill in the form with the correct information")
+//   }
 
-}
+// }
 
 
 
