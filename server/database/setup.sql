@@ -21,24 +21,25 @@ CREATE TABLE token (
     FOREIGN KEY(user_id) REFERENCES user_account("user_id")
 );
 
---  CREATE TABLE thread (
---      thread_id INT GENERATED ALWAYS AS IDENTITY,
---      user_id INT NOT NULL,
---      title VARCHAR(200),
---      thread_date TIMESTAMP DEFAULT NOW(),
---      PRIMARY KEY(thread_id),
---      FOREIGN KEY(user_id) REFERENCES user_account("user_id")
--- );
+  CREATE TABLE thread (
+      thread_id INT GENERATED ALWAYS AS IDENTITY,
+      user_id INT NOT NULL,
+      title VARCHAR(200),
+      thread_date TIMESTAMP DEFAULT NOW(),
+      PRIMARY KEY(thread_id),
+      FOREIGN KEY(user_id) REFERENCES user_account("user_id")
+ );
 
   CREATE TABLE post (
       post_id INT GENERATED ALWAYS AS IDENTITY,
-    --   thread_id INT NOT NULL,
+      thread_id INT NOT NULL,
       user_id INT NOT NULL,
       title VARCHAR(200),
       post_date TIMESTAMP DEFAULT NOW(),
       post_body TEXT NOT NULL,
       PRIMARY KEY(post_id),
-      FOREIGN KEY(user_id) REFERENCES user_account("user_id")
+      FOREIGN KEY(user_id) REFERENCES user_account("user_id"),
+      FOREIGN KEY(thread_id) REFERENCES thread("thread_id")
   );
 
  CREATE TABLE volunteers (
