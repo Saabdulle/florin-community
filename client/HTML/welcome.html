@@ -105,11 +105,11 @@
         <header class="header-tasks">
                 <form id="volunteer-input-form">
                     <label for="Full name"></label>
-                    <input type="text" name="Full name" placeholder="Full name" required>
+                    <input type="text" id="ans1" name="Full name" placeholder="Full name" required>
                     <br><br>
 
                     <label for="Task"></label>
-                    <select name="Task">
+                    <select name="Task" id="ans2">
                         <option value="" disabled selected>Choose an option:</option>
                         <option value="Recycling">Recycling</option>
                         <option value="Library Volunteering">Library Volunteering</option>
@@ -119,15 +119,18 @@
                     <br><br>
 
                     <label for="Date"></label>
+
                     <input type="date" name="Date" id="start-date" placeholder="Date" required>
+                    <input type="date" id="ans4" name="Date" placeholder="Date" required>
+
                     <br><br>
 
                     <label for="start-time"></label>
-                    <input type="time" name="task-time" id="start-time" required>
+                    <input type="time" id="ans5" name="task-time" id="start-time" required>
                     <br><br>
 
                     <label for="Email address"></label>
-                    <input type="text" name="Email" placeholder="Email address" required>
+                    <input type="text" id="ans6" name="Email" placeholder="Email address" required>
                     <br><br>
 
                     <input type="submit" id="add-entry"></input>
