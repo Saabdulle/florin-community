@@ -26,6 +26,14 @@ class User {
         const newUser = await User.getOneById(response.rows[0].user_id)
         return newUser;
     }
+    async destroy(){
+        let q = {
+            text: "DELETE FROM user_account WHERE user_id = $1",
+            values: [this.id]
+        }
+        let response = await db.query(q);
+        return response;
+    }
 }
 
 module.exports = User;
