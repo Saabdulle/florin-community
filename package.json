@@ -16,6 +16,6 @@
     "setup-db": "node ./server/database/setup.js",
     "start": "node ./server/index.js",
     "dev": "nodemon -L ./server/index.js",
-    "test": "jest --verbose --coverage"
+    "test": "jest --coverage --verbose"
   }
 }

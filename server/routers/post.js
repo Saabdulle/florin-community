@@ -5,5 +5,6 @@ const postRouter = Router();
 
 postRouter.get("/", postController.index);
 postRouter.post("/", postController.create);
+//postRouter.patch("/", postController.update);
 
 module.exports = postRouter;

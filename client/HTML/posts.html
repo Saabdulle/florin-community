@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/posts.css">
+    <script src="../JS/posts.js" defer></script>
     <title>Post | Florin Council</title>
 </head>
 <body>
@@ -18,17 +19,18 @@
        <li><a href="#">About</a></li>
        <li><a href="#">Contact</a></li>
        <li><a href="#">News</a></li>
-       <li><a href="../HTML/welcome.html">Home</a></li>
-       <li><a href="../HTML/welcome.html" id="navbar-icon">Civic Coders</a></li>
+       <li><a href="../welcome.html">Home</a></li>
+       <!-- <li><a href="../welcome.html" id="navbar-icon">Civic Coders</a></li> -->
    </ul>
    <!-- Navbar end  -->
    </div>
     <div>
     <h3>Volunteer Posts</h3>
     <div class="posts" >
-    <ul>
-        <li><a href="">View all posts</a></li>
-    </ul><br>
+    <section id="all-posts">
+        <button id="view-posts">View posts</button>
+        
+    </section><br>
         <label for="view-tasks">View posts</label>
         <select name="tasks" id="tasks">
             <option value="Task 1">Task 1</option>
@@ -39,9 +41,17 @@
         <div>
         <h3>Create a new post</h3>
         <div class="posts">
-            <ul>
-                <li><a href="">Create post</a></li><br>
-            </ul>
+            <form id="post-form">
+                <fieldset>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required>
+                </fieldset>
+                <fieldset>
+                    <label for="title">Post:</label>
+                    <textarea id="postBody" name="postBody" required></textarea>
+                </fieldset>
+                <input type="submit" value="Post">
+            </form>
         </div>
         </div>
 
