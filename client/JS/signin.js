@@ -20,7 +20,7 @@ document.getElementById("signin-form").addEventListener("submit", async (e) => {
     if (response.status == 200) {
         localStorage.setItem("token", data.token);
         alert("logged in")
-        // window.location.assign(""); somewhere
+        window.location.assign("posts.html");
     } else {
         console.log(data.error);
     }
