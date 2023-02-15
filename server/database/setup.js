@@ -3,8 +3,8 @@ require("dotenv").config();
 
 const db = require("./connect");
 
-const setup = fs.readFileSync("./database/setup.sql").toString();
-const seed = fs.readFileSync("./database/seed.sql").toString();
+const setup = fs.readFileSync("./server/database/setup.sql").toString();
+const seed = fs.readFileSync("./server/database/seed.sql").toString();
 
 async function createTables(){
     await db.query(setup);
