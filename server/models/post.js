@@ -28,6 +28,15 @@ class Post {
         const newPost = await Post.getOneById(response.rows[0].post_id)
         return newPost;
     }
+
+     async update(data) {
+         const response = await db.query("UPDATE post SET post_body = $1 WHERE post_id = $2 RETURNING post_id, post_body;",
+             [ this.post_body + data.post_body, this.post_id ]);
+         if (response.rows.length != 1) {
+             throw new Error("Unable to update votes.")
+         }
+         return new Snack(response.rows[0]);
+     }
 }
 
 module.exports = Post;
