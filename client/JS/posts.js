@@ -46,7 +46,7 @@ document.getElementById("post-form").addEventListener("submit", async (e) => {
     e.preventDefault();
 
     const form = new FormData(e.target);
-
+    const currentUsername = localStorage.getItem("username");
     const options = {
         method: "POST",
         headers: {
@@ -54,7 +54,7 @@ document.getElementById("post-form").addEventListener("submit", async (e) => {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            username: 'Cameron',
+            username: currentUsername,
             title: form.get("title"),
             post_body: form.get("postBody")
         })
