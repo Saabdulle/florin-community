@@ -7,4 +7,4 @@ threadRouter.get("/", threadController.index);
 threadRouter.post("/", threadController.create);
 //postRouter.patch("/", postController.update);
 
-module.exports = postRouter;
+module.exports = threadRouter;

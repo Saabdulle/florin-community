@@ -25,6 +25,7 @@ CREATE TABLE token (
       thread_id INT GENERATED ALWAYS AS IDENTITY,
       user_id INT NOT NULL,
       title VARCHAR(200),
+      thread_body TEXT NOT NULL,
       thread_date TIMESTAMP DEFAULT NOW(),
       PRIMARY KEY(thread_id),
       FOREIGN KEY(user_id) REFERENCES user_account("user_id")
