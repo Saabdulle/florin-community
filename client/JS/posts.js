@@ -55,7 +55,7 @@ document.getElementById("post-form").addEventListener("submit", async (e) => {
         },
         body: JSON.stringify({
             username: currentUsername,
-            title: form.get("title"),
+            post_title: form.get("title"),
             post_body: form.get("postBody")
         })
     }

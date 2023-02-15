@@ -12,7 +12,14 @@ VALUES
     ('Sarah Lee', 'Library Volunteering', '2023-02-18', '10:30:00', 'sarahlee@example.com'),
     ('David Kim', 'Green Volunteering', '2023-02-20', '12:00:00', 'davidkim@example.com');
 
-INSERT INTO post (user_id, title, post_body) VALUES
-  (1, 'Post 1', 'Content 1'),
-  (2, 'Post 2', 'Content 2'),
-  (3, 'Post 3', 'Content 3');
+INSERT INTO thread 
+    (user_id, thread_title, thread_body)
+VALUES
+    (3, 'Thread 1', 'Thread body 1'),
+    (2, 'Thread 1', 'Thread body 1'),
+    (1, 'Thread 1', 'Thread body 1');
+
+INSERT INTO post (user_id, thread_id, post_title, post_body) VALUES
+  (1, 1, 'Post 1', 'Content 1'),
+  (2, 2, 'Post 2', 'Content 2'),
+  (3, 3, 'Post 3', 'Content 3');
