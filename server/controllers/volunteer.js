@@ -5,12 +5,13 @@ async function createVolunteer (req, res) {
 
     // Read the body
     const body = req.body
+    console.log(body);
 
     try {
         // Check first has all required elements
-        if (["name", "description", "date", "task_time", "email"].every(p => Object.hasOwn(body, p))) {
+        if (["name", "description", "date", "task_time", "email"].every(v => Object.hasOwn(body, v))) {
         
-            const volunteer = await Volunteer.create(body);
+            const volunteer = await Volunteer.createVolunteer(body);
             res.status(201).json(volunteer);
         } else {
             throw new Error("Invalid properties")

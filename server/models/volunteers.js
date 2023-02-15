@@ -8,7 +8,7 @@ class Volunteer {
         this.description = volunteer_task,
         this.date = date,
         this.task_time = task_time,
-        this.volunteer_email;
+        this.email = volunteer_email;
     }
 
     static async createVolunteer({ name, description, date, task_time, email }) {

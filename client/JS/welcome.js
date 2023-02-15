@@ -1,3 +1,85 @@
+// const form = document.getElementById('volunteer-input-form');
+// const submitButton = document.getElementById('add-entry');
+
+// submitButton.addEventListener('click', async (event) => {
+//   event.preventDefault(); // prevent default form submission (prevents page refresh)
+
+//   const formData = new FormData(form); // create a new FormData object with the form data
+//   console.log(formData);
+
+//   try {
+//     const response = await fetch('http://localhost:3000/volunteer', {
+//       method: 'POST',
+//       body: formData
+//     });
+
+//     if (response.ok) {
+//       alert('Form submission successful!');
+//       form.reset(); // clear form after successful submission
+//     } else {
+//       throw new Error('Form submission failed.');
+//     }
+//   } catch (error) {
+//     console.error(error);
+//     alert('Form submission failed.');
+//   }
+// });
+
+
+
+
+let answer1 = document.getElementById("ans1");
+let answer2 = document.getElementById("ans2");
+let answer3 = document.getElementById("ans3");
+let answer4 = document.getElementById("ans4");
+let answer5 = document.getElementById("ans5");
+let answer6 = document.getElementById("ans6");
+let data = {};
+let arrCat = ["History","Art","Music","English"]
+
+
+async function addData() {
+
+
+
+
+  data = {
+    'content': question.value,
+    'answer1': answer1.value,
+    'answer2': answer2.value,
+    'answer3': answer3.value,
+    'answer4': answer4.value,
+    'corAnswer': corAnswer.value,
+    'category': category.value,
+    'corIndex': parseInt(corIndex.value)
+  }
+
+  console.log(data)
+  const options = {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    }
+  }
+
+  const response = await fetch("http://localhost:3000/flashcard", options)
+
+  if (response.status == 201) {
+    alert("list of flashcards has been successfully updated!!!")
+    location.reload();
+  } else {
+    alert("please fill in the form with the correct information")
+  }
+
+}
+
+
+
+
+
+
 // Scrolls to div with the id of content on click
 function scrollToElement() {
   const element = document.getElementById("content");
@@ -10,8 +92,6 @@ function scrollToInitiatives() {
   element.scrollIntoView({ behavior: "smooth" });
 }
 
-
-
 //Automatic update on current date
 document.getElementById('start-date').value = new Date().toISOString().slice(0, 10);
 
@@ -19,3 +99,8 @@ document.getElementById('start-date').value = new Date().toISOString().slice(0, 
 let time = new Date();
 time.setUTCHours(time.getHours(), time.getMinutes(), time.getSeconds(), 0);
 document.getElementById("start-time").valueAsDate = time;
+
+
+
+
+
