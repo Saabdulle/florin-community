@@ -64,7 +64,7 @@ html {
 }
 
 /* NAVBAR CSS END */
-#forum-container{
+/* #forum-container{
     font-size: 2rem;
     display: flex;
     align-items: center;
@@ -76,4 +76,93 @@ html {
     justify-content: left;
     margin: 20px 0px;
     flex-direction: column;
-}
+} */
+
+/* Forum Page CSS */
+#forum-container {
+    background-color: #f5f5f5;
+    padding: 5rem;
+    margin-top: 5rem;
+    border-radius: 1rem;
+    }
+    
+    h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4rem;
+    }
+    
+    h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    }
+    
+    form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    }
+    
+    input[type="text"], textarea {
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    border: none;
+    }
+    
+    input[type="submit"] {
+    width: 20rem;
+    height: 5rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: 2rem;
+    font-family: 'Muli', serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 2rem;
+    text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+    background-color: #0056b3;
+    }
+    
+    .thread-card {
+    background-color: #fff;
+    padding: 2rem 20rem;
+    margin: 20px 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    }
+    
+    .thread-card:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    }
+    
+    .thread-card h3 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    }
+    
+    .thread-card p {
+    font-size: 2.5rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    }
+    
+    #threads {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    }

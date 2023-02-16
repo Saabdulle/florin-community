@@ -41,6 +41,7 @@ li a:hover {
 #navbar-icon {
   position: absolute;
   right: 85%;
+  font-weight: 300;
 }
 
 #donate-button {
