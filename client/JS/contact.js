@@ -5,12 +5,12 @@ enquiryButton.addEventListener("click", ()=>{
     alert("Thank you for your enquiry, we will contact you soon!");
     location.reload()
 } else {
-    alert("Please write an enquiry!")
+    alert("Please write an enquiry before submitting!")
 }
     
 });
 const feedbackButton = document.querySelector("#submit-feedback");
-const feedbackInput = document.querySelector("#feedback");
+const feedbackInput = document.querySelector("#textarea2");
 feedbackButton.addEventListener("click", ()=>{
     if (feedbackInput.value != ""){
         str = feedback.value
