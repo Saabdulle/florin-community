@@ -1,7 +1,8 @@
 const User = require("../server/models/user");
-const userCon = require("../server/controllers/user");
-const request = require("supertest");
-const app = require("../server/app");
+const Token = require("../server/models/token");
+const {register, login, logout} = require("../server/controllers/user");
+// const request = require("supertest");
+// const app = require("../server/app");
 // const url = `http://localhost:${port}`
 
 describe("User model tests", ()=>{
@@ -30,26 +31,57 @@ describe("User model tests", ()=>{
         expect(del.command).toBe('DELETE');
         expect(del.rowCount).toBe(1);
     });
-    it("should handle errors if no user is found", async ()=>{
-
-    });
 });
 
-describe("User controller tests", ()=>{
-    it("should register a user", async()=>{
-        const newUser = {
-            username: "Test",
-            password: "testuser",
-            email: "test@jest"
+describe("User controller error handling", ()=>{
+    // it("should register a user", async()=>{
+    //     const newUser = {
+    //         username: "Test",
+    //         password: "testuser",
+    //         email: "test@jest"
+    //     }
+    //     // const res = await request(app).post();
+    //     // console.log(res);
+    // })
+    // it("should signin a user", async()=>{
+
+    // })
+    // it("should signout a user", async()=>{
+
+    // })
+
+    it("should return a 400 response when an error occurs in register", async ()=>{
+        const req = {};
+        const res = {
+            status: jest.fn(()=>res),
+            json: jest.fn()
         }
-        // const res = await request(app).post();
-        // console.log(res);
-    })
-    it("should signin a user", async()=>{
+        jest.spyOn(User, "create").mockImplementation(()=>{throw err});
 
+        await register(req, res);
+        expect(res.status).toHaveBeenCalledWith(400);
     })
-    it("should signout a user", async()=>{
+    it("should return a 403 response when an error occurs in login", async ()=>{
+        const req = {};
+        const res = {
+            status: jest.fn(()=>res),
+            json: jest.fn()
+        }
+        jest.spyOn(User, "getOneByUsername").mockImplementation(()=>{throw err});
 
+        await login(req, res);
+        expect(res.status).toHaveBeenCalledWith(403);
+    })
+    it("should return a 403 response when an error occurs in logout", async ()=>{
+        const req = {};
+        const res = {
+            status: jest.fn(()=>res),
+            json: jest.fn()
+        }
+        jest.spyOn(Token, "getOneByToken").mockImplementation(()=>{throw err});
+
+        await logout(req, res);
+        expect(res.status).toHaveBeenCalledWith(403);
     })
 });
 
