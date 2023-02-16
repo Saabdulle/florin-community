@@ -207,6 +207,15 @@ li a:hover {
   background-color: #60dc64;
 }
 
+#about-img {
+  height: 45%;
+  width: 35%;
+  position: absolute;
+  top: 1050px;
+  right: 70px;
+}
+
+
 /* About us end */
 
 
