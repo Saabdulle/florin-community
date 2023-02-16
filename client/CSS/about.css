@@ -1,67 +1,106 @@
 * {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-  }
-  
-  html {
-    font-size: 62.5%;
-  }
-  
-  /* NAVBAR CSS START */
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(255, 255, 255);
-  }
-  
-  li {
-    float: right;
-  }
-  
-  li a {
-    display: block;
-    font-size: 3rem;
-    font-family: 'Baloo Da 2' serif;
-    color: black;
-    text-align: center;
-    padding: 20px 24px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: rgb(205, 205, 205);
-  }
-  
-  #navbar-icon {
-    position: absolute;
-    right: 85%;
-  }
-  
-  #donate-button {
-    width: 15rem;
-    height: 5rem;
-    background-color: rgb(0, 0, 55);
-    border: none;
-    border-radius: 2rem;
-    font-family: 'Muli', serif;
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: #fff;
-    margin: 1.2rem 1rem 0 0;
-    text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
-    cursor: pointer;
-  }
-  
-  #donate-button:hover {
-    background-color: rgb(0, 0, 93);
-  }
-  
-  /* NAVBAR CSS END */
-  
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* NAVBAR CSS START */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  font-size: 3rem;
+  font-family: 'Baloo Da 2' serif;
+  color: black;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(205, 205, 205);
+}
+
+#navbar-icon {
+  position: absolute;
+  right: 85%;
+}
+
+#donate-button {
+  width: 15rem;
+  height: 5rem;
+  background-color: rgb(0, 0, 55);
+  border: none;
+  border-radius: 2rem;
+  font-family: 'Muli', serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 1.2rem 1rem 0 0;
+  text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#donate-button:hover {
+  background-color: rgb(0, 0, 93);
+}
+
+/* NAVBAR CSS END */
+
+
+/* P DIV START*/
+
+#container1 {
+  border: solid 5px rgb(250, 250, 250);
+  margin: auto;
+  width: 45%;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 20px;
+  box-shadow: rgba(15, 19, 66, 0.4) 0px 2px 4px, rgba(8, 56, 17, 0.3) 0px 7px 13px -3px, #370b0b33 0px -3px 0px inset;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 25px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: justify;
+}
+#link-btn {
+  width: auto;
+  margin-top: 50px;
+  border-radius: 7px;
+  padding: 10px;
+  border: 2px solid #042525; 
+  box-shadow: 0 8px 16px 0 rgba(11, 152, 174, 0.2), 0 6px 20px 0 rgba(16, 166, 123, 0.255);
+  margin-right: 210px;
+}
+
