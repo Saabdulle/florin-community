@@ -12,6 +12,9 @@ html {
 }
 
 /* NAVBAR CSS START */
+
+
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -27,7 +30,7 @@ li {
 li a {
   display: block;
   font-size: 3rem;
-  font-family: 'Baloo Da 2' serif;
+  font-family: 'Baloo Doo 2' sans-serif;
   color: black;
   text-align: center;
   padding: 20px 24px;
@@ -41,7 +44,9 @@ li a:hover {
 #navbar-icon {
   position: absolute;
   right: 85%;
-  font-weight: 300;
+  top: -7px;
+  font-family: 'Baloo Da 2';
+  font-weight: 800;
 }
 
 #donate-button {
