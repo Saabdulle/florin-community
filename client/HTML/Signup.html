@@ -30,26 +30,32 @@
         <H3 id="signup-title">Sign up</H3>
         <form id="signup-form">
             <label class="reg" for="username-register">Username</label>
-            <input type="text" id="username-register" name="username" placeholder="Enter Username" required><br><br>
+            <input type="text" id="username-register" name="username" placeholder="Enter Username" required><br><br><br>
             <label class="reg" for="email-register">Email</label>
-            <input type="email" id="email-register" name="email" placeholder="Enter Email" required><br><br>
+            <input type="email" id="email-register" name="email" placeholder="Enter Email" required><br><br><br>
             <label class="reg" for="password-register">Password</label>
-            <input type="password" id="password-register" name="password" placeholder="Enter Password" required><br><br>
+            <input type="password" id="password-register" name="password" placeholder="Enter Password" required><br><br><br>
             <label class="reg" for="repeat-password-register">Repeat Password</label>
             <input type="password" id="repeat-password-register" name="repeat-password" placeholder="Repeat Password" required><br><br>
-            <label class="reg" for="text">Available Days (Check box on available days)</label><br><br>
-            
-            Monday<br><input type="checkbox" id="available-days-register"><br>
-            Tuesday<br><input type="checkbox" id="available-days-register"> <br>
-            Wednesday<br><input type="checkbox" id="available-days-register"> <br>
-            Thursday<br><input type="checkbox" id="available-days-register"> <br>
-            Friday<br><input type="checkbox" id="available-days-register"><br>
-            Saturday<br><input type="checkbox" id="available-days-register"><br>
-            Sunday<br><input type="checkbox" id="available-days-register"><br><br>
+            <h4>Available days (Check box on available days)</h4><br>
+            <label class="reg" for="available-days-register1">Monday</label>
+            <input type="checkbox" class="available-days-register" id="available-days-register1">
+            <label for="available-days-register2">Tuesday</label> 
+            <input type="checkbox"  class="available-days-register" id="available-days-register2"> 
+            <label for="available-days-register3">Wednesday</label> 
+            <input type="checkbox"  class="available-days-register" id="available-days-register3"> 
+            <label for="available-days-register4">Thursday</label> 
+            <input type="checkbox"  class="available-days-register" id="available-days-register4"> 
+            <label for="available-days-register5">Friday</label> 
+            <input type="checkbox"  class="available-days-register" id="available-days-register5">
+            <label for="available-days-register6">Saturday</label> 
+            <input type="checkbox"  class="available-days-register" id="available-days-register6">
+            <label for="available-days-register7">Sunday</label> 
+            <input type="checkbox"  class="available-days-register" id="available-days-register7"><br><br>
             <!-- <label for="textarea">Others</label><br>
             <textarea name="Others" id="textarea" cols="30" rows="3"></textarea><br> -->
             
-            <input type="submit" value="Sign up">
+            <input type="submit" value="Sign up" id="signup-btn">
         </form>
     </div>
 </body>
