@@ -31,7 +31,6 @@ CREATE TABLE thread (
     FOREIGN KEY(user_id) REFERENCES user_account("user_id")
  );
 
-
 CREATE TABLE post (
     post_id INT GENERATED ALWAYS AS IDENTITY,
     thread_id INT NOT NULL,

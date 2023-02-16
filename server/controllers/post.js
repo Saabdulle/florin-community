@@ -3,8 +3,27 @@ const Post = require("../models/post.js");
 const User = require("../models/user");
 
 async function index(req, res) {
+    console.log('hi');
     try {
         const posts = await Post.getAll();
+        res.status(200).json(posts);
+    } catch (err) {
+        res.status(500).json({ "error": err.message })
+    }
+}
+async function ascend(req, res) {
+    console.log('hi');
+    try {
+        const posts = await Post.getAsc();
+        console.log('hi');
+        res.status(200).json(posts);
+    } catch (err) {
+        res.status(500).json({ "error": err.message })
+    }
+}
+async function descend(req, res) {
+    try {
+        const posts = await Post.getDesc();
         res.status(200).json(posts);
     } catch (err) {
         res.status(500).json({ "error": err.message })
@@ -86,5 +105,7 @@ module.exports = {
     show,
     create,
     update,
-    destroy
+    destroy,
+    ascend,
+    descend
 }
