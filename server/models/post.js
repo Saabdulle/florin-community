@@ -14,6 +14,14 @@ class Post {
         let response = await db.query("SELECT * FROM post;")
         return response.rows.map(g => new Post(g));
     }
+    static async getAsc () {
+        let response = await db.query("SELECT * FROM post ORDER BY post_date;")
+        return response.rows.map(g => new Post(g));
+    }
+    static async getDesc () {
+        let response = await db.query("SELECT * FROM post ORDER BY post_date DESC;")
+        return response.rows.map(g => new Post(g));
+    }
     static async getOneById(id){
         let response = await db.query("SELECT * FROM post WHERE post_id = $1;", [id]);
         // Add error handling
