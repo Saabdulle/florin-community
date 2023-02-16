@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,11 @@
     <title>Contact | Florin Council</title>
     <script src="../JS/contact.js" defer></script>
 </head>
+
 <body>
 
-      <!-- Navbar start -->
+    <!-- Navbar start -->
+
     <ul class="horizontal gray">
 
         <li><button id="donate-button">Donate</button></li>
@@ -25,31 +28,33 @@
         <li><a href="../HTML/welcome.html" id="navbar-icon">Civic Coders</a></li>
     </ul>
     <!-- Navbar end  -->
-    <h3>Contact us</h3>
 
-    <div>
 
+    <div id="container">
+        <h3>Contact us</h3>
+       
         <div>
-        <p>Call us</p>
-        <p>0208 020 0802</p>
+            <p><strong>Make an enquiry</strong></p><br>
+            <label for="email1">Email address</label>
+            <input type="email" id="email1" placeholder="Enter Email"><br><br>
+            <label id="enquire" for="textarea1">Enquire</label>
+            <textarea id="textarea1" cols="30" rows="5" placeholder="Enter enquiry"></textarea><br>
+            <button type="submit" id="submit-enquiry">Submit</button>
         </div>
-         <div>
-        <p>Make an enquire</p>
-        <label for="email">Email address</label>
-        <input type="email" id="email" placeholder="Enter Email"><br>
-        <label for="textarea1">Enquire</label>
-        <textarea name="text" id="textarea1" cols="30" rows="5" placeholder="Enter enquire"></textarea>
-        <button type="submit" id="submit-enquiry">Submit</button>
-    </div>
-
-    <div>
-        <label for="email">Email address</label>
-        <input type="email" id="email" placeholder="Enter Email"><br>
-        <label for="feedback">Feedback</label>
-        <textarea id="feedback" cols="30" rows="5" placeholder="Enter feedback"></textarea>
-        <button type="submit" id="submit-feedback">Submit</button>
-    </div>
-    
+        <div id="horizontal-line"></div>
+        <div>
+            <p><strong>Leave a feedback</strong></p><br>
+            <label for="email2">Email address</label>
+            <input type="email" id="email2" placeholder="Enter Email"><br><br>
+            <label id="feedback" for="textarea2">Feedback</label>
+            <textarea id="textarea2" cols="30" rows="5" placeholder="Enter feedback"></textarea><br>
+            <button type="submit" id="submit-feedback">Submit</button>
+        </div>
+        <div>
+           <label id="asdf" for="myFile">Supporting documentation: </label>
+            <input type="file" id="myFile">
+        </div>
     </div>
 </body>
+
 </html>
