@@ -13,7 +13,9 @@ function makeThreadCard(t){
     const card = document.createElement("div");
     card.classList.add("thread-card");
     card.id = "t"+t.id;
-    card.onclick = function(){getPosts(t.id);}
+    card.onclick = function(){
+        window.location.href = `/HTML/posts.html?thread=${t.id}`
+    }
 
     const title = document.createElement("h3");
     title.innerText = t.title;
@@ -39,12 +41,25 @@ function makeThreadCard(t){
     threadList.appendChild(card);
 }
 
-async function getPosts(id){
-    const res = await fetch(`http://localhost:3000/posts/${id}`);
-    const data = await res.json();
-    // console.log(window.location.host)
-    console.log(data);
-    // data.forEach(t => makePostCard(t));
-}
+document.getElementById("create-thread").addEventListener("submit", async (e)=>{
+    e.preventDefault();
+
+    const form = new FormData(e.target);
+    const currentUsername = localStorage.getItem("username");
+    const options = {
+        method: "POST",
+        headers: {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            username: currentUsername,
+            thread_title: form.get("title"),
+            thread_body: form.get("body")
+        })
+    }
+    const result = await fetch("http://localhost:3000/threads", options);
+    if (result.status==201) window.location.reload();
+})
 
 getThreads()
