@@ -19,9 +19,9 @@ app.get("/", (req, res) => {
 
 })
 
-app.use("/thread", threadRouter);
-app.use("/forum", postRouter);
+app.use("/threads", threadRouter);
+app.use("/posts", postRouter);
 app.use("/users", userRouter);
-app.use("/volunteer", volunteerRouter);
+app.use("/volunteers", volunteerRouter);
 
 module.exports = app;
