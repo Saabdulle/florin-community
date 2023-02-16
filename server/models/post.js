@@ -33,14 +33,24 @@ class Post {
         return newPost;
     }
 
-     async update(data) {
-         const response = await db.query("UPDATE post SET post_body = $1 WHERE post_id = $2 RETURNING post_id, post_body;",
-             [ this.post_body + data.post_body, this.post_id ]);
+      async changePost (data) {
+         const response = await db.query("UPDATE post SET post_body = $1 WHERE post_id = $2 RETURNING *;",
+             [ data.post_body, this.post_id ]);
          if (response.rows.length != 1) {
              throw new Error("Unable to update votes.")
          }
-         return new Snack(response.rows[0]);
+         return new Post(response.rows[0]);
      }
+     async delete() {
+
+        const res = await db.query("DELETE FROM post WHERE post_id = $1 RETURNING *;", [ this.post_id ]);
+
+        if (res.rows[0]) {
+            return true;
+        } else {
+            throw new Error("Unable to delete post");
+        };
+    }
 }
 
 module.exports = Post;
