@@ -31,19 +31,7 @@ CREATE TABLE thread (
     FOREIGN KEY(user_id) REFERENCES user_account("user_id")
  );
 
-<<<<<<< HEAD
-  CREATE TABLE post (
-      post_id INT GENERATED ALWAYS AS IDENTITY,
-      --thread_id INT NOT NULL,
-      user_id INT NOT NULL,
-      title VARCHAR(200),
-      post_date TIMESTAMP DEFAULT NOW(),
-      post_body TEXT NOT NULL,
-      PRIMARY KEY(post_id),
-      FOREIGN KEY(user_id) REFERENCES user_account("user_id")
-      --FOREIGN KEY(thread_id) REFERENCES thread("thread_id")
-  );
-=======
+
 CREATE TABLE post (
     post_id INT GENERATED ALWAYS AS IDENTITY,
     thread_id INT NOT NULL,
@@ -55,7 +43,6 @@ CREATE TABLE post (
     FOREIGN KEY(user_id) REFERENCES user_account("user_id"),
     FOREIGN KEY(thread_id) REFERENCES thread("thread_id")
 );
->>>>>>> 7bca253a6f2f59f142d3bf92dd664bbf29745b19
 
 CREATE TABLE volunteers (
     volunteer_id SERIAL PRIMARY KEY,
