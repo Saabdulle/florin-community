@@ -5,7 +5,7 @@ postButton.addEventListener('click', async (e) => {
     e.preventDefault()
     
     const getData = async () => {
-    const response = await fetch("http://localhost:3000/forum");
+    const response = await fetch("http://localhost:3000/posts");
     const data = await response.json();
     console.log(data);
     data.forEach(d => {
@@ -55,11 +55,11 @@ document.getElementById("post-form").addEventListener("submit", async (e) => {
         },
         body: JSON.stringify({
             username: currentUsername,
-            title: form.get("title"),
+            post_title: form.get("title"),
             post_body: form.get("postBody")
         })
     }
-    const result = await fetch("http://localhost:3000/forum", options);
+    const result = await fetch("http://localhost:3000/posts", options);
 
     if (result.status == 201) {
         window.location.reload();

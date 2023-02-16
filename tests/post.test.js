@@ -16,7 +16,7 @@ describe("Testing the getAll function", () => {
 // create function in models - post.js
   describe('Testing the create function', () => {
     it('should create a new post', async () => {
-      const data = { title: 'Test Post', post_body: 'This is a test post.' };
+      const data = { thread_id: 1, post_title: 'Test Post', post_body: 'This is a test post.' };
       const user_id = 1;
 
       const post = await Post.create(data, user_id);
@@ -25,7 +25,7 @@ describe("Testing the getAll function", () => {
 
       const result = await db.query('SELECT * FROM post WHERE post_id = $1', [post.post_id]);
       expect(result.rows.length).toBe(1);
-      expect(result.rows[0].title).toBe(data.title);
+      expect(result.rows[0].post_title).toBe(data.post_title);
       expect(result.rows[0].post_body).toBe(data.post_body);
       expect(result.rows[0].user_id).toBe(user_id);
     });
@@ -57,7 +57,7 @@ describe("Testing the getAll function", () => {
           status: jest.fn(() => res),
           json: jest.fn()
         }
-        const err = new Error('An error occurred')
+        const err = new Error('invalid input syntax for type integer: \"NaN\"')
         jest.spyOn(Post, 'getOneById').mockImplementation(() => { throw err })
     
         await show(req, res)

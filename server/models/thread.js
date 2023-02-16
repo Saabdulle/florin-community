@@ -1,10 +1,11 @@
 const db = require("../database/connect");
 
 class Thread {
-    constructor({thread_id, user_id, title, thread_date}) {
+    constructor({thread_id, user_id, thread_title, thread_body, thread_date}) {
         this.id = thread_id;
         this.user_id = user_id;
-        this.title = title;
+        this.title = thread_title;
+        this.body = thread_body;
         this.date = thread_date;
     }
 
@@ -14,8 +15,8 @@ class Thread {
     }
     static async create(data,user_id) {
         let q = {
-            text: "INSERT INTO thread (user_id, title, thread_body) VALUES ($1, $2, $3) RETURNING *;",
-            values: [user_id,data.title, data.thread_body]
+            text: "INSERT INTO thread (user_id, thread_title, thread_body) VALUES ($1, $2, $3) RETURNING *;",
+            values: [user_id, data.thread_title, data.thread_body]
         }
         let response = await db.query(q);
         return response.rows[0];

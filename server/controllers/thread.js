@@ -16,10 +16,10 @@ async function create(req, res) {
         const data = req.body;
         const user = await User.getOneByUsername(data.username);
        
-        const checkValues = ["title","thread_body"].every(p => Object.hasOwn(data, p))
+        const checkValues = ["thread_title","thread_body"].every(p => Object.hasOwn(data, p))
         if (checkValues) {
             
-            const thread = await Thread.create(data,user.id);
+            const thread = await Thread.create(data, user.id);
             res.status(201).send(thread);
         } else {
             res.status(404).json({
