@@ -21,7 +21,7 @@ document.getElementById("signin-form").addEventListener("submit", async (e) => {
         localStorage.setItem("token", data.token);
         localStorage.setItem("username", form.get("username"));
         alert("logged in")
-        window.location.assign("posts.html");
+        window.location.assign("forum.html");
     } else {
         console.log(data.error);
     }

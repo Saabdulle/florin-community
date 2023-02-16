@@ -14,7 +14,7 @@ async function index(req, res) {
 async function show(req, res) {
     try {
         const id = parseInt(req.params.id);
-        const post = await Post.getOneById(id);
+        const post = await Post.getByThreadId(id);
         res.status(200).json(post);
     } catch (err) {
         res.status(404).json({ "error": err.message })
@@ -26,7 +26,7 @@ async function create(req, res) {
         const data = req.body;
         const user = await User.getOneByUsername(data.username);
        
-        const checkValues = ["post_body", "title"].every(p => Object.hasOwn(data, p))
+        const checkValues = ["post_body", "post_title"].every(p => Object.hasOwn(data, p))
         if (checkValues) {
             
             const post = await Post.create(data,user.id);
