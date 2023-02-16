@@ -1,4 +1,4 @@
-const { scrollToElement, scrollToInitiatives, scrollToVolunteer } = require("./welcomeFunctions.js");
+const { scrollToElement, scrollToInitiatives, scrollToVolunteer } = require("./welcomeFunctions");
 global.fetch = require("jest-fetch-mock")
 
 const fs = require("fs");
