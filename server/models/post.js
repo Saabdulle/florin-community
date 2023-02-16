@@ -19,6 +19,10 @@ class Post {
         // Add error handling
         return new Post(response.rows[0]);
     }
+    static async getByThreadId(id){
+        let response = await db.query("SELECT * FROM post WHERE thread_id = $1;", [id]);
+        return response.rows.map(p => new Post(p));
+    }
     static async create(data,user_id){
         let q = {
             text: "INSERT INTO post (post_title, post_body, user_id, thread_id) VALUES ($1, $2, $3, $4) RETURNING post_id;",

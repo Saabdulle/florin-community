@@ -13,6 +13,7 @@ function makeThreadCard(t){
     const card = document.createElement("div");
     card.classList.add("thread-card");
     card.id = "t"+t.id;
+    card.onclick = function(){getPosts(t.id);}
 
     const title = document.createElement("h3");
     title.innerText = t.title;
@@ -36,6 +37,14 @@ function makeThreadCard(t){
     card.appendChild(data);
 
     threadList.appendChild(card);
+}
+
+async function getPosts(id){
+    const res = await fetch(`http://localhost:3000/posts/${id}`);
+    const data = await res.json();
+    // console.log(window.location.host)
+    console.log(data);
+    // data.forEach(t => makePostCard(t));
 }
 
 getThreads()
