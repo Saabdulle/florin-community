@@ -57,7 +57,7 @@ describe("Testing the getAll function", () => {
           status: jest.fn(() => res),
           json: jest.fn()
         }
-        const err = new Error('An error occurred')
+        const err = new Error('invalid input syntax for type integer: \"NaN\"')
         jest.spyOn(Post, 'getOneById').mockImplementation(() => { throw err })
     
         await show(req, res)

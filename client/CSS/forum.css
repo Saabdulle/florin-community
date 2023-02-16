@@ -64,3 +64,16 @@ html {
 }
 
 /* NAVBAR CSS END */
+#forum-container{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.thread-card {
+    display:flex;
+    justify-content: left;
+    margin: 20px 0px;
+    flex-direction: column;
+}
