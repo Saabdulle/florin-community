@@ -7,7 +7,7 @@ const removeTokenFromLocalStorage = () => {
   }
 
 async function getThreads() {
-    const res = await fetch("http://localhost:3000/threads");
+    const res = await fetch("/threads");
     const data = await res.json();
     // console.log(window.location.host)
     console.log(data);
@@ -64,7 +64,7 @@ document.getElementById("create-thread").addEventListener("submit", async (e)=>{
             thread_body: form.get("body")
         })
     }
-    const result = await fetch("http://localhost:3000/threads", options);
+    const result = await fetch("/threads", options);
     if (result.status==201) window.location.reload();
 })
 

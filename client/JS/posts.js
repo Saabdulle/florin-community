@@ -4,7 +4,7 @@ if (id == null) { window.location.href = "/HTML/forum.html" }
 const container = document.querySelector("#all-posts");
 
 const getData = async () => {
-    const response = await fetch(`http://localhost:3000/posts/${id}`);
+    const response = await fetch(`/posts/${id}`);
     const data = await response.json();
     console.log(data);
     data.forEach(d => {
@@ -60,7 +60,7 @@ document.getElementById("post-form").addEventListener("submit", async (e) => {
             post_body: form.get("postBody")
         })
     }
-    const result = await fetch("http://localhost:3000/posts", options);
+    const result = await fetch("/posts", options);
 
     if (result.status == 201) {
         window.location.reload();
