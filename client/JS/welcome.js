@@ -13,7 +13,7 @@ volunteerForm.addEventListener("submit", (e) => {
 
   const sendVolunteer = async () => {
     try {
-      const data = await axios.post("http://localhost:3000/volunteers", userData)
+      const data = await axios.post("/volunteers", userData)
       document.querySelector("#ans1").value = ""
       document.querySelector("#ans2").value = ""
       document.querySelector("#ans3").value = ""
