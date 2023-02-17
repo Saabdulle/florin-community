@@ -56,7 +56,6 @@ document.getElementById("post-form").addEventListener("submit", async (e) => {
         body: JSON.stringify({
             thread_id: id,
             username: currentUsername,
-            thread_id: 2,
             post_title: form.get("title"),
             post_body: form.get("postBody")
         })

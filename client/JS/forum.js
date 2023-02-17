@@ -1,4 +1,10 @@
 const threadList = document.getElementById("threads");
+const removeTokenFromLocalStorage = () => {
+    window.localStorage.removeItem("token")
+    window.localStorage.removeItem("username")
+    window.location.assign("welcome.html");
+    alert("Logged Out!")
+  }
 
 async function getThreads() {
     const res = await fetch("http://localhost:3000/threads");
@@ -63,3 +69,10 @@ document.getElementById("create-thread").addEventListener("submit", async (e)=>{
 })
 
 getThreads()
+
+const logOut = document.querySelector("#logout")
+logOut.addEventListener("click", (e) => {
+    e.preventDefault()
+    removeTokenFromLocalStorage()
+    
+  })

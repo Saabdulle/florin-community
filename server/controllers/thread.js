@@ -1,6 +1,5 @@
 const Thread = require("../models/thread.js");
 const User = require("../models/user");
-
 async function index(req, res) {
     try {
         const thread = await Thread.getAll();
@@ -10,6 +9,7 @@ async function index(req, res) {
     }
 }
 
+  
 async function create(req, res) {
    
     try {
