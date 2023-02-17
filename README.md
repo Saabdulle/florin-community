@@ -27,11 +27,11 @@ This app requires a `.env` file to run locally which requires:
 
 ## Technologies
 - HTML/CSS/JS 
-- Node, npm 
-- nodemon, express
+- Node.js, npm 
+- nodemon, Express.js
 - railway.app
 - postgres, SQL, ElephantSQL
-- bcrypt+uuid
+- bcrypt, uuid
 - jest
 
 ## Process
