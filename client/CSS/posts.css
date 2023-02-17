@@ -42,6 +42,9 @@ html {
   #navbar-icon {
     position: absolute;
     right: 85%;
+    top: -7px;
+    font-family: 'Baloo Da 2';
+    font-weight: 600;
   }
   
   #donate-button {
