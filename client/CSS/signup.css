@@ -121,6 +121,13 @@ label{
   font-size: 20px;
   font-family: 'Nunito', sans-serif;
 }
+.reg-pwd{
+  white-space: nowrap;
+  margin-left: -13px;
+}
+#repeat-password-register{
+  margin-left: 23px;
+}
 input {
     display: inline-block;
     /* float: left; */
