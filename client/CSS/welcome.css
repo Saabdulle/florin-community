@@ -353,7 +353,8 @@ li a:hover {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgb(231, 231, 231);
+  background-color: #E4E9FD;
+  background-image: -webkit-linear-gradient(65deg, #4CAF50 50%, #E4E9FD 50%);
 }
 
 .header-tasks {
