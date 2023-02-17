@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Welcome Page</title>
+    <title>Welcome | Florin Council</title>
     <script src="../JS/welcome.js" defer></script>
     <script src="https://kit.fontawesome.com/fadd4523d1.js" crossorigin="anonymous" defer></script>
 
@@ -14,16 +14,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Navbar start -->
-    <ul class="horizontal gray">
+    <ul>
 
-        <li><button id="donate-button">Donate</button></li>
+        <li><button onclick="donationPage()" id="donate-button">Donate</button></li>
         <li><a href="../HTML/Signup.html">Sign up</a></li>
         <li><a href="../HTML/signin.html">Log in</a></li>
         <li><a href="../HTML/about.html">About</a></li>
@@ -52,53 +51,54 @@
     <!-- Main Welcome Page UI end -->
 
     <!-- About us start -->
-    <div class="container" id="content">
-        <header class="header">
-            <div class="img-wrapper about">
-            </div>
-            <div class="banner">
-                <h2 class="about-header">Your community needs you!</h2>
-                <br><br>
-                <p id="about-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-                    dolor sit amet, consectetur adipiscing elit.</p>
-                <button id="about-button" onclick="scrollToInitiatives()">Learn more</button>
-            </div>
-        </header>
-    </div>
-    <!-- About us end -->
+<div class="container" id="content">
+    <header class="header">
+        <div class="img-wrapper about">
+        </div>
+        <div class="banner">
+            <h2 class="about-header">Your community needs you!</h2>
+            <br><br>
+            <p id="about-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit.</p>
+            <button id="about-button" onclick="scrollToInitiatives()">Learn more</button>
+        </div>
+    </header>
+    <img id="about-img" src="https://thumbs.dreamstime.com/b/people-community-team-group-illustration-vector-198104992.jpg">
+</div>
+<!-- About us end -->
 
     <!-- Learn more start-->
     <section class="section-2" id="initiatives">
         <h1 class="section-heading">Initiatives</h1>
         <div class="entry">
             <a href="#" class="entry-link">
-                <img src="" class="entry-img">
+                <img src="../assets/recycle-symbol.png" class="entry-img">
                 <h3 class="entry-name">Recycling</h3>
                 <p class="entry-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </a>
             <a href="#" class="entry-link">
-                <img src="" class="entry-img">
+                <img src="../assets/library.png" class="entry-img">
                 <h3 class="entry-name">Library Volunteer</h3>
                 <p class="entry-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </a>
             <a href="#" class="entry-link">
-                <img src="" class="entry-img">
+                <img src="../assets/green-energy.png" class="entry-img">
                 <h3 class="entry-name">Green Volunteer</h3>
                 <p class="entry-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </a>
             <a href="#" class="entry-link">
-                <img src="" class="entry-img">
+                <img src="../assets/retailer.png" class="entry-img">
                 <h3 class="entry-name">Green Marketplace</h3>
                 <p class="entry-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </a>
             <a href="#" class="entry-link">
-                <img src="" class="entry-img">
+                <img src="../assets/museum.png" class="entry-img">
                 <h3 class="entry-name">Art and heritage</h3>
                 <p class="entry-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </a>
             <a href="#" class="entry-link">
-                <img src="" class="entry-img">
+                <img src="../assets/girl.png" class="entry-img">
                 <h3 class="entry-name">Scouts</h3>
                 <p class="entry-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
             </a>

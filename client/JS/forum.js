@@ -76,3 +76,6 @@ logOut.addEventListener("click", (e) => {
     removeTokenFromLocalStorage()
     
   })
+function donationPage() {
+    window.location="../HTML/donation.html"
+}

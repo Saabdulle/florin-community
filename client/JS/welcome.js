@@ -60,3 +60,6 @@ document.querySelector(".start-time-class").valueAsDate = time;
 
 
 
+function donationPage() {
+  window.location="../HTML/donation.html"
+}

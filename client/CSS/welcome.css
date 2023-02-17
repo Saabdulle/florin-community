@@ -7,11 +7,15 @@
   text-decoration: none;
 }
 
+
 html {
   font-size: 62.5%;
 }
 
 /* NAVBAR CSS START */
+
+
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -27,7 +31,7 @@ li {
 li a {
   display: block;
   font-size: 3rem;
-  font-family: 'Baloo Da 2' serif;
+  font-family: 'Baloo Doo 2' sans-serif;
   color: black;
   text-align: center;
   padding: 20px 24px;
@@ -41,6 +45,9 @@ li a:hover {
 #navbar-icon {
   position: absolute;
   right: 85%;
+  top: -7px;
+  font-family: 'Baloo Da 2';
+  font-weight: 600;
 }
 
 #donate-button {
@@ -207,12 +214,21 @@ li a:hover {
   background-color: #60dc64;
 }
 
+#about-img {
+  height: 45%;
+  width: 35%;
+  position: absolute;
+  top: 1050px;
+  right: 70px;
+}
+
+
 /* About us end */
 
 
 
 
-/* Learn more CSS Start */
+/* Initiatives CSS Start */
 .section-2 {
   height: 100vh;
   background-color: #4CAF50;
@@ -326,7 +342,7 @@ li a:hover {
   transition: opacity 1s 1s;
 }
 
-/* Learn more CSS end*/
+/* Initiatives CSS end*/
 
 
 
@@ -337,7 +353,8 @@ li a:hover {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgb(231, 231, 231);
+  background-color: #E4E9FD;
+  background-image: -webkit-linear-gradient(65deg, #4CAF50 50%, #E4E9FD 50%);
 }
 
 .header-tasks {

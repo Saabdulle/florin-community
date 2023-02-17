@@ -24,5 +24,9 @@ document.getElementById("signin-form").addEventListener("submit", async (e) => {
         window.location.assign("forum.html");
     } else {
         console.log(data.error);
+        alert("Login attempt unsuccessful.\nPlease check your username and password and try again.");
     }
 })
+function donationPage() {
+    window.location="../HTML/donation.html"
+}

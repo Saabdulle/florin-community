@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation | Florin Council</title>
+    <link rel="stylesheet" href="../CSS/donation.css">
+    <script src="../JS/donation.js" defer></script>
+</head>
+<body>
+    <!-- Navbar start -->
+
+    <ul class="horizontal gray">
+
+        <li><button onclick="donationPage()" id="donate-button">Donate</button></li>
+        <li><a href="../HTML/Signup.html">Sign up</a></li>
+        <li><a href="../HTML/signin.html">Log in</a></li>
+        <li><a href="../HTML/about.html">About</a></li>
+        <li><a onclick="scrollToVolunteer()">Volunteer</a></li>
+        <li><a href="../HTML/contact.html">Contact</a></li>
+        <!-- <li><a href="../HTML/posts.html">Posts</a></li> -->
+        <li><a href="../HTML/forum.html">Forum</a></li>
+        <li><a href="../HTML/welcome.html">Home</a></li>
+        <li><a href="../HTML/welcome.html" id="navbar-icon">Civic Coders</a></li>
+    </ul>
+    <!-- Navbar end  -->
+<div id="container">
+    <h3>Donate to your community</h3>
+    <label for="name">Full Name</label>
+    <input type="text" id="name"><br><br>
+    <label for="email">Email</label>
+    <input type="text" id="email"><br><br><br>
+    <label for="donate">Choose amount:</label>
+    <select name="Donate" id="donate" required>
+        <option disabled selected>Amount to donate</option>
+        <option value="ten">£10</option>
+        <option value="twenty-five">£25</option>
+        <option value="fifty">£50</option>
+        <option value="hundred">£100</option>
+        <option value="other">Other</option><br>
+       
+    </select><br><br>
+    <label for="other">Other</label>
+    <input type="text" id="other"><br><br>
+    <button type="submit" id="submit-btn">Submit</button>
+      <!-- <input id="submit-btn" type="button" value="Submit"> -->
+    
+    </div>
+</body>
+</html>

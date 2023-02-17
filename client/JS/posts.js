@@ -67,3 +67,6 @@ document.getElementById("post-form").addEventListener("submit", async (e) => {
     }
 })
 
+function donationPage() {
+    window.location="../HTML/donation.html"
+}

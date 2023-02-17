@@ -41,7 +41,10 @@ describe('createVolunteer', () => {
   afterEach(() => {
     jest.restoreAllMocks();
   });
-
+  
+  afterAll(()=>{
+    db.end();
+  })
   it('should create a new volunteer and return a 201 response', async () => {
     const req = { body: {
       name: 'John Doe',

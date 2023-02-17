@@ -1,4 +1,3 @@
-console.log("loaded");
 // require("dotenv").config();
 // const port = process.env.PORT || 3000;
 
@@ -11,9 +10,9 @@ document.getElementById("signup-form").addEventListener("submit", async (e) => {
         password: form.get("password"),
         repeat: form.get("repeat-password")
     }
-    // console.log(items);
     if(items.password != items.repeat){
         alert("Passwords do not match!");
+        return;
     }
 
     const options = {
@@ -36,3 +35,7 @@ document.getElementById("signup-form").addEventListener("submit", async (e) => {
         console.log(data.error);
     }
 })
+
+function donationPage() {
+    window.location="../HTML/donation.html"
+}
