@@ -14,7 +14,7 @@ function makeThreadCard(t){
     card.classList.add("thread-card");
     card.id = "t"+t.id;
     card.onclick = function(){
-        window.location.href = `/HTML/posts.html?thread=${t.id}`
+        window.location.href = `../HTML/posts.html?thread=${t.id}`
     }
 
     const title = document.createElement("h3");

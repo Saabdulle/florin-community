@@ -29,6 +29,7 @@
     <!-- Navbar end  -->
     </div>
     <a href="./forum.html">Back to forum</a>
+    <div class="container">
     <div>
         <h3>Volunteer Posts</h3>
         <div class="posts">
@@ -43,16 +44,17 @@
             <form id="post-form">
                 <fieldset>
                     <label for="title">Title:</label>
-                    <input type="text" id="title" name="title" required>
+                    <input type="text" id="title" name="title" placeholder="Enter post title here" required>
                 </fieldset>
                 <fieldset>
-                    <label for="title">Post:</label>
-                    <textarea id="postBody" name="postBody" required></textarea>
+                    <label for="title" id="label-post">Post:</label>
+                    <textarea id="postBody" name="postBody" placeholder="Enter post body here" required></textarea>
                 </fieldset>
                 <input type="submit" value="Post">
             </form>
         </div>
     </div>
+</div>
 
 
 </body>

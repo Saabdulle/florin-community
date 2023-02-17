@@ -7,6 +7,11 @@
     text-decoration: none;
   }
 
+  body {
+    background-image: -webkit-linear-gradient(65deg, #4CAF50 50%, #E4E9FD 50%);
+    height: 100vh;
+  }
+
 
 html {
     font-size: 62.5%;
@@ -67,7 +72,67 @@ html {
     background-color: rgb(0, 0, 93);
   }
   /* NAVBAR CSS END */
+
+  .container {
+    display: inline-block;
+    text-align: center;
+    margin-left: 473px;
+  }
+
   .posts ul li{
     float: left;
     border: 3px solid blanchedalmond;
   }
+
+label {
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+  margin-top: 5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#label-post {
+  margin: 0 0 200px 20px;
+}
+
+#title {
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 27px;
+  padding: 10px;
+  margin: 20px 20px 20px 35px;
+  font-size: 2rem;
+}
+
+#postBody {
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 27px;
+  padding: 10px;
+  margin: 20px 20px 20px 40px;
+  font-size: 2rem;
+}
+
+input[type="submit"] {
+  width: 15rem;
+  height: 5rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 2rem;
+  font-family: 'Muli', serif;
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: #4CAF50;
+  -webkit-text-stroke: 0.2px black;
+  margin: 4rem 0;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  }
+
+input[type="submit"]:hover {
+  background-color: rgb(185, 185, 185);
+  transition: 0.3s;
+}
