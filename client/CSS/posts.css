@@ -9,7 +9,7 @@
 
   body {
     background-image: -webkit-linear-gradient(65deg, #4CAF50 50%, #E4E9FD 50%);
-    height: 100vh;
+    height: 120vh;
   }
 
 
@@ -73,15 +73,59 @@ html {
   }
   /* NAVBAR CSS END */
 
+  #back-link {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+  }
+
   .container {
     display: inline-block;
     text-align: center;
-    margin-left: 473px;
+    margin-left: 540px;
+    margin-top: 100px;
   }
+
+  .post-border {
+    border-radius: 20px;
+    background-color: #E4E9FD;
+    box-shadow: rgba(15, 19, 66, 0.4) 0px 2px 4px, rgba(8, 56, 17, 0.3) 0px 7px 13px -3px, #370b0b33 0px -3px 0px inset;
+    font-size: 2rem;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .create-post-border {
+    border-radius: 20px;
+    background-color: #E4E9FD;
+    box-shadow: rgba(15, 19, 66, 0.4) 0px 2px 4px, rgba(8, 56, 17, 0.3) 0px 7px 13px -3px, #370b0b33 0px -3px 0px inset;
+  }
+
 
   .posts ul li{
     float: left;
     border: 3px solid blanchedalmond;
+  }
+
+  h2 {
+    padding: 10px 0;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  p {
+    padding: 10px 0;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  h3 {
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    color: #4CAF50;
+    text-shadow: 0.5px 0.5px 1.5px rgba(0, 0, 0, 0.5);
   }
 
 label {
@@ -93,7 +137,9 @@ label {
 }
 
 #label-post {
-  margin: 0 0 200px 20px;
+  position: absolute;
+  bottom: 100px;
+  left: 550px;
 }
 
 #title {
