@@ -40,3 +40,7 @@ document.getElementById("signup-form").addEventListener("submit", async (e) => {
 function donationPage() {
     window.location="http://127.0.0.1:5500/client/HTML/donation.html"
 }
+function changeTheme() {
+    let element = document.body;
+    element.classList.toggle("dark-mode");
+ }
