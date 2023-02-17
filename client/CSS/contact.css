@@ -1,5 +1,6 @@
 body{
-  background-color: #e8e8e8;
+  background-color: #E4E9FD;
+  background-image: -webkit-linear-gradient(65deg, #4CAF50 50%, #E4E9FD 50%);
 }
 * {
   margin: 0;
