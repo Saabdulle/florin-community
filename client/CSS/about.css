@@ -125,3 +125,17 @@ div ul {
   box-shadow: 0 8px 16px 0 rgba(11, 152, 174, 0.2), 0 6px 20px 0 rgba(16, 166, 123, 0.255);
 }
 
+#swap-btn{
+  margin-left: 250px;
+  margin-top: 10px;
+  border-radius: 30px;
+  border: none;  
+}
+
+button:hover{
+  opacity:1
+}
+.dark-mode {
+  background-color: black;
+  background-image: -webkit-linear-gradient(65deg, #032532 50%, #1e011b 50%);
+}

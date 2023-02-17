@@ -28,43 +28,39 @@
     </ul>
     <!-- Navbar end  -->
     </div>
-    <a href="./forum.html">Back to forum</a>
-    <div>
+    <a href="./forum.html" id="back-link">Back to forum</a>
+    <div class="container">
+    <div class="post-border">
         <h3>Volunteer Posts</h3>
         <div class="posts">
+            <label for="view-tasks">View posts</label>
+        <select name="filter" id="filter">
+            <option>Filter</option>
+            <option value="newest">Newest first</option>
+            <option value="Oldest">Oldest first</option>
+        </select>
             <section id="all-posts">
 
             </section>
         </div>
     </div><br><br>
-    <div>
-    <h3>Volunteer Posts</h3>
-    <div class="posts" >
-    <section id="all-posts">
-        <button id="view-posts">View posts</button>
-        
-    </section><br>
-        <label for="view-tasks">View posts</label>
-        <select name="filter" id="filter">
-            <option value="newest">Newest first</option>
-            <option value="Oldest">Oldest first</option>
-        </select></div></div><br><br>
+  
         <div>
+    <div class="create-post-border">
         <h3>Create a new post</h3>
         <div class="posts">
             <form id="post-form">
-                <fieldset>
                     <label for="title">Title:</label>
-                    <input type="text" id="title" name="title" required>
-                </fieldset>
-                <fieldset>
-                    <label for="title">Post:</label>
-                    <textarea id="postBody" name="postBody" required></textarea>
-                </fieldset>
+                    <input type="text" id="title" name="title" placeholder="Enter post title here" required>
+                    <br><br>
+                    <label for="title" id="label-post">Post:</label>
+                    <textarea id="postBody" name="postBody" placeholder="Enter post body here" required></textarea>
+                    <br><br>
                 <input type="submit" value="Post">
             </form>
         </div>
     </div>
+</div>
 
 
 </body>

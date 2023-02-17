@@ -139,3 +139,14 @@ input {
 #signin-btn:hover{
    box-shadow: 0 12px 16px 0 rgba(125, 184, 176, 0.24),0 17px 50px 0 rgba(10, 87, 97, 0.19);
 }
+#swap-btn{
+    margin-left: 250px;
+    margin-top: 10px;
+    border-radius: 30px;
+    border: none;  
+  }
+.dark-mode {
+    background-color: black;
+    background-image: -webkit-linear-gradient(65deg, #032532 50%, #1e011b 50%);
+    
+  }

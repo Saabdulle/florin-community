@@ -20,7 +20,7 @@ function makeThreadCard(t){
     card.classList.add("thread-card");
     card.id = "t"+t.id;
     card.onclick = function(){
-        window.location.href = `/HTML/posts.html?thread=${t.id}`
+        window.location.href = `../HTML/posts.html?thread=${t.id}`
     }
 
     const title = document.createElement("h3");
@@ -79,3 +79,7 @@ logOut.addEventListener("click", (e) => {
 function donationPage() {
     window.location="../HTML/donation.html"
 }
+function changeTheme() {
+    let element = document.body;
+    element.classList.toggle("dark-mode");
+ }
