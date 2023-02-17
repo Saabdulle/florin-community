@@ -78,7 +78,7 @@ li a:hover {
   background-color: rgb(250, 250, 250);
   margin: auto auto 100px auto;
   width: 40%;
-  height: 900px;
+  height: 930px;
   padding: 30px;
   margin-top: 50px;
   border-radius: 20px;
@@ -157,8 +157,22 @@ button:hover {
   transition: 0.3s;
 }
 
-#asdf{
+#doc{
   white-space: nowrap;
   margin-top: 25px;
   margin-right: 80px;
+}
+#swap-btn{
+  margin-left: 165px;
+  margin-top: 4px;
+  border-radius: 30px;
+  border: none;  
+  box-shadow: none;
+}
+button:hover{
+  opacity:1
+}
+.dark-mode{
+  background-color: black;
+  background-image: -webkit-linear-gradient(65deg, #032532 50%, #1e011b 50%);
 }

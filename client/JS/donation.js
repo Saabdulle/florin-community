@@ -11,4 +11,7 @@ donationButton.addEventListener("click", ()=>{
 // }
     
 });
-console.log("fds")
+function changeTheme() {
+    let element = document.body;
+    element.classList.toggle("dark-mode");
+ }

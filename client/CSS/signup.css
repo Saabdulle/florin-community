@@ -170,10 +170,6 @@ h4{
 button:hover{
   opacity:1
 }
-/* #lightTheme{
-  background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, #4CAF50 50%, #E4E9FD 50%);
-} */
 .dark-mode {
   background-color: black;
   background-image: -webkit-linear-gradient(65deg, #032532 50%, #1e011b 50%);
