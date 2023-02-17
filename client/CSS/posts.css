@@ -138,7 +138,7 @@ label {
 
 #label-post {
   position: absolute;
-  bottom: 100px;
+  /* bottom: 100px; */
   left: 550px;
 }
 
